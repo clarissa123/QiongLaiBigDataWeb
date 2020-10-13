@@ -1,0 +1,346 @@
+.overview {
+  background: url("images/overview.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+  margin-bottom: 10px;
+}
+.overview span {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.area_distribution_title,
+.industry_distribution_title {
+  height: 42px;
+  line-height: 42px;
+  background: url("images/area_distribution_title_bg.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.area_distribution_title span,
+.industry_distribution_title span {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+html section main.projectList {
+  padding-top: 17px;
+}
+.projectList {
+  height: 100%;
+}
+.projectList .projectList_content .advanced_screening_title {
+  background: url("images/advanced_screening_title_bg.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+  position: relative;
+}
+.projectList .projectList_content .advanced_screening_title .year_select2 {
+  left: 20px;
+  position: absolute;
+}
+.projectList .projectList_content .advanced_screening_title .tit {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.projectList .projectList_content .advanced_screening_title .add_btn {
+  position: absolute;
+  display: inline-block;
+  right: 20px;
+}
+.projectList .projectList_content .advanced_screening_title i {
+  margin-right: 0.3vw;
+}
+.projectList .projectList_content .advanced_filter {
+  background: url("images/advanced_filter_bg.png") no-repeat;
+  background-size: 100% 100%;
+  height: 283px;
+  box-sizing: border-box;
+}
+.projectList .projectList_content .advanced_filter .advanced_filter_container {
+  width: 100%;
+  padding-top: 33px;
+  padding-left: 38px;
+}
+.projectList .projectList_content .advanced_filter .advanced_filter_container div {
+  margin-bottom: 33px;
+}
+.projectList .projectList_content .advanced_filter .advanced_filter_container div span {
+  letter-spacing: 1px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.projectList .projectList_content .advanced_filter .advanced_filter_container div > span:first-child {
+  margin-right: 25px;
+}
+.projectList .projectList_content .advanced_filter .advanced_filter_container div > span:nth-child(2) {
+  margin-right: 32px;
+}
+.projectList .projectList_content .advanced_filter .advanced_filter_container div > span:not(:nth-child(1)):not(:nth-child(2)) {
+  margin-right: 20px;
+}
+.projectList .projectList_content .advanced_filter .advanced_filter_container .area {
+  display: inline-block;
+  width: 100%;
+}
+.projectList .projectList_content .advanced_filter .advanced_filter_container .area .area_con {
+  width: 91%;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.projectList .projectList_content .advanced_filter .advanced_filter_container .area .area_con span {
+  margin-right: 10px;
+}
+.projectList .projectList_content .advanced_filter .advanced_filter_container .distribution .distribution_con {
+  width: 90%;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.projectList .projectList_content .advanced_filter .advanced_filter_container .total_investment .total_investment_con {
+  width: 90%;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.projectList .projectList_content .advanced_filter .advanced_filter_container .investment_this_year .investment_this_year_con {
+  width: 90%;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.projectList .projectList_content .advanced_screening_content {
+  margin-top: 16px;
+  background: url("images/advanced_screening_content_bg.png") no-repeat;
+  background-size: 100% 100%;
+  height: 583px;
+  overflow-y: scroll;
+  /* IE 浏览器 */
+  /*三角箭头的颜色*/
+  scrollbar-arrow-color: #07256D;
+  /*滚动条滑块按钮的颜色*/
+  scrollbar-face-color: rgba(0, 141, 223, 0.2);
+  /*滚动条整体颜色*/
+  scrollbar-highlight-color: #07256D;
+  /*滚动条阴影*/
+  scrollbar-shadow-color: #07256D;
+  /*滚动条轨道颜色*/
+  scrollbar-track-color: #07256D;
+  /* chrome & safari 浏览器 */
+}
+.projectList .projectList_content .advanced_screening_content::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 12px;
+  height: 0;
+}
+.projectList .projectList_content .advanced_screening_content::-webkit-scrollbar-button {
+  display: none;
+}
+.projectList .projectList_content .advanced_screening_content::-webkit-scrollbar-thumb {
+  /*滚动条里面的滑块*/
+  border-radius: 2px;
+  background: rgba(43, 176, 255, 0.2);
+  border: 1px solid #000;
+}
+.projectList .projectList_content .advanced_screening_content::-webkit-scrollbar-track {
+  /*滚动条里面轨道背景*/
+  border-radius: 0;
+  background: #041549;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table {
+  height: 108px;
+  box-sizing: border-box;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box {
+  height: 100%;
+  background: linear-gradient(360deg, #0d348e 0%, rgba(25, 57, 132, 0) 100%);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box span {
+  font-size: 14px;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box .name {
+  position: relative;
+  width: 8%;
+  text-align: center;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box .name span {
+  display: inline-block;
+  font-size: 14px;
+  color: #2BB1FF;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box .name span:before {
+  content: '';
+  background: url("images/left_top.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -50px;
+  top: -10px;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box .name span:after {
+  content: '';
+  background: url("images/right_bottom.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: -50px;
+  top: 50px;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box .info {
+  width: 60vw;
+  height: 3.86vw;
+  border: 1px solid rgba(43, 177, 255, 0.17);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box .info .townName {
+  width: 10vw;
+  margin-left: 2vw;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box .info .fundsSourec {
+  width: 13vw;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box .info .planDate {
+  width: 15vw;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box .info .totals {
+  width: 12vw;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box .info .classify {
+  width: 8vw;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box .btn .details span,
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .advanced_screening_table_box .btn .edit span {
+  color: #2BB1FF;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .pagination .ant-pagination {
+  text-align: center;
+  font-size: 16px;
+  height: 100%;
+  line-height: 108px;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .pagination .ant-pagination-item a {
+  color: #9DD9FD;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .pagination .ant-pagination-item-active {
+  background: transparent;
+  border: none;
+}
+.projectList .projectList_content .advanced_screening_content .advanced_screening_table .pagination .ant-pagination-item-active a {
+  color: #2BB1FF;
+}
+.activeCls {
+  color: #2CB1FF;
+}
+.my_page {
+  text-align: center;
+}
+.my_page .ant-pagination-item {
+  color: #9DD9FD;
+  background-color: transparent;
+  border-color: transparent;
+}
+.myModalDel .ant-modal {
+  width: 43.46vw;
+  height: 27.46vw;
+  background: url("images/alert_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 0;
+  top: 13.73vw;
+}
+.myModalDel .ant-modal .ant-modal-title {
+  display: none;
+}
+.myModalDel .ant-modal .ant-modal-content {
+  background-color: transparent;
+  box-shadow: none;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-close {
+  top: 1.7vw;
+  right: 3.6vw;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-close .ant-modal-close-x {
+  font-size: 14px;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-header {
+  padding: 0;
+  background-color: transparent;
+  border-bottom: none;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-body {
+  padding: 311px;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-body .modal_title {
+  width: 79%;
+  position: absolute;
+  left: 14%;
+  top: 12%;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-body .modal_title span:nth-child(1) {
+  font-size: 16px;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-body .modal_title span:nth-child(2) {
+  display: block;
+  width: 90%;
+  height: 1px;
+  background: rgba(44, 177, 255, 0.3);
+  margin-top: 0.53vw;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-body .modal_content {
+  position: absolute;
+  top: 24%;
+  left: 18%;
+  width: 62%;
+  text-align: center;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-body .modal_content .warn_pic {
+  margin: 0 auto;
+  display: inline-block;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-body .modal_content .warn_pic img {
+  width: 33px;
+  height: 1.46vw;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-body .modal_content .warn_pic span {
+  display: block;
+  font-size: 0.66vw;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-body .modal_content .warn_con {
+  margin-top: 2vw;
+  font-size: 0.93vw;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-body .modal_content .myButton {
+  width: 4.93vw;
+  height: 1.46vw;
+  background: #e53333;
+  border: none;
+  margin: 2vw 3vw;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-body .modal_content .myButton span {
+  color: rgba(13, 52, 142);
+  font-weight: bold;
+  font-size: 16px;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-footer {
+  padding: 0;
+  border-top: none;
+}
+.myModalDel .ant-modal .ant-modal-content .ant-modal-footer .ant-btn {
+  display: none;
+}

@@ -1,0 +1,277 @@
+.overview {
+  background: url("images/overview.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+  margin-bottom: 10px;
+}
+.overview span {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.area_distribution_title,
+.industry_distribution_title {
+  height: 42px;
+  line-height: 42px;
+  background: url("images/area_distribution_title_bg.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.area_distribution_title span,
+.industry_distribution_title span {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.projectDistribution {
+  height: 100%;
+}
+.projectDistribution .projectDistribution_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.projectDistribution .projectDistribution_content .area_distribution {
+  width: 577px;
+  height: 928px;
+  margin-right: 10px;
+}
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content {
+  background: url("images/area_distribution_content_bg.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 886px;
+}
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .item {
+  text-align: center;
+  margin-top: 36px;
+}
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .item .item_title {
+  position: relative;
+}
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .item .item_title span {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .item .item_title span::before,
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .item .item_title span::after {
+  content: '';
+  background: url("images/title_left.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 5px;
+  height: 20px;
+  top: 50%;
+  margin-top: -10px;
+  left: 50%;
+}
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .item .item_title span::before {
+  margin-left: 29px;
+}
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .item .item_title span::after {
+  margin-left: -36px;
+}
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .investment {
+  text-align: center;
+}
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .investment .investment_title {
+  position: relative;
+}
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .investment .investment_title span {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .investment .investment_title span::before,
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .investment .investment_title span::after {
+  content: '';
+  background: url("images/title_left.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 5px;
+  height: 20px;
+  top: 50%;
+  margin-top: -9px;
+  left: 50%;
+}
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .investment .investment_title span::before {
+  margin-left: 29px;
+}
+.projectDistribution .projectDistribution_content .area_distribution .area_distribution_content .investment .investment_title span::after {
+  margin-left: -36px;
+}
+.projectDistribution .projectDistribution_content .industry_distribution {
+  width: 1292px;
+  height: 928px;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_title {
+  position: relative;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_title span {
+  display: inline-block;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_title span:last-child {
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_title i {
+  margin-right: 5px;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content1 {
+  width: 100%;
+  height: 444px;
+  background: url("images/industry_distribution_content_bg.png") no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 10px;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content1 .money_con .distribution_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content1 .money_con .distribution_title .distribution_tit {
+  margin-top: 37px;
+  margin-left: 72px;
+  position: relative;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content1 .money_con .distribution_title .distribution_tit::before,
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content1 .money_con .distribution_title .distribution_tit::after {
+  content: '';
+  background: url("images/title_left.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 5px;
+  height: 20px;
+  top: 10%;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content1 .money_con .distribution_title .distribution_tit::before {
+  margin-left: -10px;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content1 .money_con .distribution_title .distribution_tit::after {
+  margin-left: 4px;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content1 .money_con .distribution_title .distribution_tit span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content1 .money_con .distribution_title .year_select3 {
+  width: 116px;
+  height: 30px;
+  margin-right: 56px;
+  margin-top: 36px;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content2 {
+  width: 100%;
+  height: 432px;
+  background: url("images/industry_distribution_content_bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content2 .money_con .distribution_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content2 .money_con .distribution_title .distribution_tit2 {
+  margin-top: 45px;
+  margin-left: 72px;
+  position: relative;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content2 .money_con .distribution_title .distribution_tit2::before,
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content2 .money_con .distribution_title .distribution_tit2::after {
+  content: '';
+  background: url("images/title_left.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 5px;
+  height: 20px;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content2 .money_con .distribution_title .distribution_tit2::before {
+  margin-left: -10px;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content2 .money_con .distribution_title .distribution_tit2::after {
+  margin-left: 4px;
+}
+.projectDistribution .projectDistribution_content .industry_distribution .industry_distribution_content .industry_distribution_content2 .money_con .distribution_title .distribution_tit2 span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+/************** 年份选择框 start *************/
+.year_select3 .ant-calendar-picker-input.ant-input {
+  color: rgba(255, 255, 255, 0.9);
+  border: none;
+  background: url("images/year_select_bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.ant-calendar,
+.ant-calendar-input,
+.ant-calendar-year-panel {
+  background-color: #0D348E;
+  border-color: #2BB1FF;
+}
+.ant-calendar-input-wrap,
+.ant-calendar-year-panel-header {
+  border-color: #2BB1FF;
+}
+.ant-calendar-year-panel-year,
+.ant-calendar-input {
+  color: rgba(255, 255, 255, 0.9);
+}
+.ant-calendar-year-panel-year:hover {
+  background: transparent;
+}
+.ant-calendar-header a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn::after {
+  color: #fff;
+  border-color: #fff;
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn::after {
+  color: #fff;
+  border-color: #fff;
+}
+.ant-calendar-picker-clear {
+  background: transparent;
+}
+/************** 年份选择框 end *************/
+/************** 分页 start *************/
+.pagination {
+  text-align: center;
+  font-size: 18px;
+}
+.pagination .ant-pagination-item a {
+  color: #9DD9FD;
+}
+.pagination .ant-pagination-item-active {
+  background: transparent;
+  border: none;
+}
+.pagination .ant-pagination-item-active a {
+  color: #2BB1FF;
+}
+.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis,
+.ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis {
+  color: rgba(255, 255, 255, 0.9);
+}
+/************** 分页 end *************/

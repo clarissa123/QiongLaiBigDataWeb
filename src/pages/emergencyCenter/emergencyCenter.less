@@ -1,0 +1,1902 @@
+@import "../../assets/style/myUI.less";
+
+.emergencyCenter {
+  height: 100%;
+  padding: 0;
+  margin: 20px 0 0 30px;
+  display: flex;
+  flex-direction: row;
+
+  .item_left {
+    width: 1365px;
+    display: flex;
+    flex-direction: column;
+
+    .item_left_one {
+      height: 680px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .chargePerson {
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .scenicChargePerson {
+          width: 100%;
+          height: 680px;
+          box-sizing: border-box;
+
+          .scenicChargePerson_title {
+            height: 42px;
+            text-align: center;
+            line-height: 42px;
+            background: url("./images/emer_title.png") no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+
+            span {
+              font-size: 16px;
+              font-weight: bold;
+            }
+          }
+
+          .scenicChargePerson_content {
+            height: 638px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 0.5vw;
+            background: url("./images/responsibleContact_content_bg@2x.png") no-repeat;
+            background-size: 100% 100%;
+            padding-top: 20px;
+
+            .scenicChargePerson_content_scroll {
+              width: 100%;
+              height: 513px;
+              overflow-y: scroll;
+              overflow-x: hidden;
+
+              /* IE 浏览器 */
+              & {
+                /*三角箭头的颜色*/
+                scrollbar-arrow-color: #07256D;
+                /*滚动条滑块按钮的颜色*/
+                scrollbar-face-color: rgba(0, 141, 223, 0.2);
+                /*滚动条整体颜色*/
+                scrollbar-highlight-color: #07256D;
+                /*滚动条阴影*/
+                scrollbar-shadow-color: #07256D;
+                /*滚动条轨道颜色*/
+                scrollbar-track-color: #07256D;
+              }
+
+              /* chrome & safari 浏览器 */
+              /*滚动条整体部分,必须要设置*/
+              &::-webkit-scrollbar {
+                /*滚动条整体样式*/
+                width: 0.26vw;
+                height: 0;
+              }
+
+              /*滚动条的上下两端的按钮*/
+              &::-webkit-scrollbar-button {
+                display: none;
+              }
+
+              /*滚动条的滑块按钮*/
+              &::-webkit-scrollbar-thumb {
+                /*滚动条里面的滑块*/
+                border-radius: 2px;
+                background: rgba(0, 141, 223, 0.2);
+              }
+
+              /*滚动条的轨道*/
+              &::-webkit-scrollbar-track {
+                /*滚动条里面轨道背景*/
+                border-radius: 0;
+              }
+
+              &::after {
+                content: "";
+                flex: auto;
+              }
+
+              .scenicChargePerson_content_container {
+                width: 23.07vw;
+                height: 68.4vw;
+                height: fit-content;
+                border: 1px solid rgba(25, 59, 157, 1);
+
+                .shenSuInfo_item {
+                  width: 23.07vw;
+                  height: 2.96vw;
+                  line-height: 2.96vw;
+                  display: inline-flex;
+                  align-items: center;
+                  box-sizing: border-box;
+
+                  &:nth-child(odd) {
+                    background-color: rgba(13, 52, 142, 1);
+                  }
+
+                  span {
+                    font-size: 16px;
+                  }
+
+                  div:nth-child(1) {
+                    padding-left: 20px;
+                    padding-right: 2vw;
+                  }
+
+                  div:nth-child(2) {
+                    padding-right: 1.56vw;
+                    width: 5.2vw;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+
+                  div:nth-child(3) {
+                    width: 9.17vw;
+                    padding-right: 2.06vw;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+
+                  div:nth-child(4) {
+                    cursor: pointer;
+
+                    span {
+                      color: #3E82F7;
+                    }
+
+                  }
+                }
+
+
+              }
+            }
+
+            .addBtn {
+              margin: 1.3vw auto;
+              width: 10.94vw;
+              height: 2.6vw;
+              line-height: 2.6vw;
+              text-align: center;
+              background: rgba(42, 176, 254, 1);
+              border: 1px solid rgba(42, 176, 254, 1);
+              opacity: 1;
+              border-radius: 6px;
+              cursor: pointer;
+
+              span {
+                color: #fff;
+                font-weight: 400;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+      }
+
+      .mapMonitoring {
+        width: 875px;
+
+        .mapMonitoring_title {
+          height: 42px;
+          text-align: center;
+          line-height: 42px;
+          background: url("./images/mapMonitoring_content_title_bg@2x.png") no-repeat;
+          background-size: 100% 100%;
+          position: relative;
+
+          .mapMonitoring_map {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+          }
+
+          .mapMonitoring_allPoliceInfo {
+            display: inline-block;
+            position: absolute;
+            right: 0.83vw;
+
+            &:hover {
+              cursor: pointer;
+            }
+
+            img {
+              display: inline-block;
+              margin-right: 0.15vw;
+            }
+
+            span {
+              color: #32C889;
+            }
+          }
+        }
+
+        .mapMonitoring_content {
+          width: 100%;
+          height: 638px;
+          background: url("./images/mapMonitor_content_bg.png") no-repeat;
+          box-sizing: border-box;
+
+          .rank_info {
+            width: 37%;
+            height: 20px;
+            background: url("./images/rank_info.png") no-repeat;
+            background-size: 100% 100%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+
+    .responsibleContact {
+      width: 1365px;
+      height: 288px;
+      margin-top: 11px;
+
+      .responsibleContact_title {
+        height: 42px;
+        line-height: 42px;
+        background: url("./images/mapMonitoring_content_title_bg@2x.png") no-repeat;
+        background-size: 100% 100%;
+        text-align: center;
+
+        span:nth-child(1) {
+          font-size: 16px;
+          font-weight: bold;
+          display: inline-block;
+          margin-left: 3.6vw;
+        }
+
+        .find {
+          display: inline-block;
+          margin-right: 16px;
+          float: right;
+          cursor: pointer;
+
+          img {
+            width: 0.67vw;
+            height: 0.67vw;
+            margin-right: 0.26vw;
+          }
+
+          span {
+            font-family: Microsoft YaHei;
+            color: #32C889;
+          }
+        }
+      }
+
+      .responsibleContact_content {
+        height: 248px;
+        background: url("./images/responsibleContact_content_bg@2x.png") no-repeat;
+        box-sizing: border-box;
+
+        .responsibleContact_content_container {
+          width: 100%;
+          height: 100%;
+          padding-top: 20px;
+          padding-left: 30px;
+          position: relative;
+
+
+          .dropDown_menu {
+            margin-bottom: 30px;
+
+            .ant-select {
+              width: 170px;
+              height: 30px;
+
+              .ant-select-selection {
+                background: url("./images/dropDown_menu.png") no-repeat;
+                background-size: 100% 100%;
+              }
+
+              .my_drop {
+                width: 6.77vw;
+                height: 6.77vw;
+
+                .ant-select-dropdown {
+                  line-height: 0.5;
+                }
+
+                .drop_item {
+                  padding: 0 !important;
+                  width: 6.77vw;
+                  height: 1.67vw !important;
+                  line-height: 0 !important;
+                  font-size: 0.7vw !important;
+                }
+
+
+                .ant-select-dropdown {
+                  background-color: rgba(8, 40, 117, 1);
+                  border: 1px solid rgba(43, 177, 255, 1);
+                }
+
+                .ant-calendar-selected-day .ant-calendar-date {
+                  background: #1890ff;
+                }
+
+                .ant-calendar-ok-btn ant-calendar-ok-btn-disabled {
+                  background-color: #1890ff;
+                }
+
+                .has-error .ant-form-explain,
+                .has-error .ant-form-split {
+                  color: #1890ff;
+                }
+
+                .ant-select-dropdown-menu-item {
+                  color: rgb(255, 255, 255);
+                  background-color: transparent;
+                }
+
+                .ant-select-dropdown-menu-item {
+                  padding: 0;
+                  font-size: 16px;
+                }
+
+                .ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+                  background-color: rgba(43, 177, 255, 1);
+                }
+
+                .ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+                  background-color: transparent;
+                }
+
+                .ant-select-dropdown-menu-item-selected {
+                  background-color: #2BB1FF;
+                  font-weight: 400;
+                  padding: 0;
+                }
+
+              }
+
+            }
+
+          }
+
+          .dropDown_con {
+            height: 8vw;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            overflow-y: scroll;
+
+            /* IE 浏览器 */
+            & {
+              /*三角箭头的颜色*/
+              scrollbar-arrow-color: #07256D;
+              /*滚动条滑块按钮的颜色*/
+              scrollbar-face-color: rgba(0, 141, 223, 0.2);
+              /*滚动条整体颜色*/
+              scrollbar-highlight-color: #07256D;
+              /*滚动条阴影*/
+              scrollbar-shadow-color: #07256D;
+              /*滚动条轨道颜色*/
+              scrollbar-track-color: #07256D;
+            }
+
+            /* chrome & safari 浏览器 */
+            &::-webkit-scrollbar {
+              /*滚动条整体样式*/
+              width: 12px;
+              height: 0;
+            }
+
+            &::-webkit-scrollbar-button {
+              display: none;
+            }
+
+            &::-webkit-scrollbar-thumb {
+              /*滚动条里面的滑块*/
+              border-radius: 2px;
+              background: rgba(43, 176, 255, 0.2);
+              border: 1px solid #000;
+            }
+
+            &::-webkit-scrollbar-track {
+              /*滚动条里面轨道背景*/
+              border-radius: 0;
+              background: rgba(4, 21, 73, 1);
+            }
+
+            &::after {
+              content: "";
+              flex: auto;
+            }
+
+            div {
+              width: 30%;
+              margin-left: 25px;
+              margin-bottom: 1.67vw;
+
+              img {
+                width: 0.66vw;
+                height: 0.66vw;
+                vertical-align: middle;
+              }
+
+              span {
+                vertical-align: middle;
+                margin-left: 0.53vw;
+              }
+            }
+
+            span {
+              font-size: 16px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .item_right {
+    margin-left: 10px;
+    width: 483px;
+    box-sizing: border-box;
+
+    .geologicalEarlyWarning {
+      .geologicalEarlyWarning_title {
+        text-align: center;
+        height: 42px;
+        line-height: 42px;
+        background: url("./images/geologicalEarlyWarning_title_bg@2x.png") no-repeat;
+        background-size: 100% 100%;
+
+        span:nth-child(1) {
+          font-size: 16px;
+          font-weight: bold;
+          display: inline-block;
+          margin-left: 3.6vw;
+        }
+
+        .more {
+          display: inline-block;
+          margin-right: 16px;
+          float: right;
+
+          img {
+            width: 0.67vw;
+            height: 0.67vw;
+            margin-right: 0.26vw;
+            vertical-align: middle;
+          }
+
+          span {
+            font-family: Microsoft YaHei;
+            vertical-align: middle;
+            color: #32C889;
+          }
+        }
+      }
+
+      .geologicalEarlyWarning_content {
+        height: 7.2vw;
+        background: url("./images/geologicalEarlyWarning_content_bg@2x.png") no-repeat;
+        background-size: 100% 100%;
+        padding-top: 27px;
+
+        .geologicalEarlyWarning_row {
+          width: 455px;
+          height: 86px;
+          background: linear-gradient(360deg, #0d348e 0%, rgba(25, 57, 132, 0) 100%);
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: distribute;
+          justify-content: space-around;
+          -ms-flex-align: center;
+          align-items: center;
+          margin: 0 14px 14px 14px;
+
+          .warn {
+            display: flex;
+            flex-direction: column;
+
+            .warn_pic {
+              width: 32.77px;
+              height: 29.03px;
+              margin: 0 auto;
+
+              img {
+                width: 80%;
+                height: 80%;
+                display: inline-block;
+              }
+            }
+
+            .warn_time {
+              span {
+                display: inline-block;
+                font-size: 14px;
+              }
+            }
+          }
+
+          .warn_con {
+            width: 15.33vw;
+          }
+
+          .myLook {
+            width: 50px;
+            height: 29px;
+            line-height: 29px;
+            background: #F5AB6B;
+            border: none;
+            padding: 0;
+
+            span {
+              font-size: 16px;
+              font-weight: 500;
+              color: #0D348E;
+            }
+          }
+        }
+      }
+
+    }
+
+    .trafficEarlyWarning {
+      .trafficEarlyWarning_title {
+        text-align: center;
+        height: 42px;
+        line-height: 42px;
+        background: url("./images/geologicalEarlyWarning_title_bg@2x.png") no-repeat;
+        background-size: 100% 100%;
+
+        span:nth-child(1) {
+          font-size: 16px;
+          font-weight: bold;
+          display: inline-block;
+          margin-left: 3.6vw;
+        }
+
+        .more {
+          display: inline-block;
+          margin-right: 16px;
+          float: right;
+
+          img {
+            width: 0.67vw;
+            height: 0.67vw;
+            margin-right: 0.26vw;
+            vertical-align: middle;
+          }
+
+          span {
+            font-family: Microsoft YaHei;
+            color: #32C889;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      .trafficEarlyWarning_content {
+        height: 456px;
+        background: url("./images/trafficEarlyWarning_content_bg@2x.png") no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 11px;
+
+        .trafficEarlyWarning_row {
+          width: 455px;
+          height: 86px;
+          background: linear-gradient(360deg, #0d348e 0%, rgba(25, 57, 132, 0) 100%);
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: distribute;
+          justify-content: space-around;
+          -ms-flex-align: center;
+          align-items: center;
+          margin: 0 14px 27px 14px;
+
+          .warn {
+            display: flex;
+            flex-direction: column;
+
+            .warn_pic {
+              width: 32.77px;
+              height: 29.03px;
+              margin: 0 auto;
+
+              img {
+                width: 80%;
+                height: 80%;
+                display: inline-block;
+              }
+            }
+
+            .warn_time {
+              span {
+                display: inline-block;
+                font-size: 14px;
+              }
+            }
+          }
+
+
+          .warn_con {
+            width: 15.33vw;
+          }
+
+          .myLook {
+            width: 2.66vw;
+            height: 1.46vw;
+            line-height: 1.46vw;
+            background: #F5AB6B;
+            border: none;
+            padding: 0;
+
+            span {
+              font-size: 16px;
+              font-weight: 500;
+              color: #0D348E;
+            }
+          }
+        }
+      }
+    }
+
+    .weatherWarning {
+      height: 279px;
+      margin-bottom: 12px;
+
+      .weatherWarning_title {
+        text-align: center;
+        height: 42px;
+        line-height: 42px;
+        background: url("./images/geologicalEarlyWarning_title_bg@2x.png") no-repeat;
+        background-size: 100% 100%;
+
+        span:nth-child(1) {
+          font-size: 16px;
+          font-weight: bold;
+          display: inline-block;
+          margin-left: 3.6vw
+        }
+
+        .more {
+          display: inline-block;
+          margin-right: 16px;
+          float: right;
+
+          img {
+            width: 0.67vw;
+            height: 0.67vw;
+            margin-right: 0.26vw;
+            vertical-align: middle;
+          }
+
+          span {
+            font-family: Microsoft YaHei;
+            color: #32C889;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      .weatherWarning_content {
+        height: 237px;
+        background: url("./images/trafficEarlyWarning_content_bg@2x.png") no-repeat;
+        background-size: 100% 100%;
+        padding-top: 26px;
+
+        .weatherWarning_row {
+          width: 455px;
+          height: 86px;
+          background: linear-gradient(360deg, rgba(13, 52, 142, 1) 0%, rgba(25, 57, 132, 0) 100%);
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin: 0 14px 14px 14px;
+
+          .warn {
+            display: flex;
+            flex-direction: column;
+
+            .warn_pic {
+              width: 32.77px;
+              height: 29.03px;
+              margin: 0 auto;
+
+              img {
+                width: 80%;
+                height: 80%;
+                display: inline-block;
+              }
+            }
+
+            .warn_time {
+              span {
+                display: inline-block;
+                font-size: 14px;
+              }
+            }
+          }
+
+
+
+          .warn_con {
+            width: 15.33vw;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+          }
+
+          .myLook {
+            width: 50px;
+            height: 29px;
+            line-height: 29px;
+            border: none;
+            padding: 0;
+
+            span {
+              font-size: 16px;
+              font-weight: 500;
+              color: #0D348E;
+              text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.videoModal {
+  .ant-modal {
+    background: url("./images/alert_bg@2x.png") no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 0;
+    top: 50%;
+    margin-top: -6.65vw;
+
+    .ant-modal-title {
+      display: none;
+    }
+
+    .ant-modal-content {
+      background-color: transparent;
+      box-shadow: none;
+
+      .ant-modal-close {
+        top: 0.5vw;
+        right: 2.2vw;
+
+        .ant-modal-close-x {
+          font-size: 0.67vw;
+        }
+      }
+
+      .ant-modal-header {
+        padding: 0;
+        background-color: transparent;
+        border-bottom: none;
+      }
+
+      .ant-modal-body {
+        padding: 311px;
+
+        .videoModal_title {
+          width: 79%;
+          position: absolute;
+          left: 14%;
+          top: 7%;
+
+          span:nth-child(1) {
+            font-size: 16px;
+            letter-spacing: 1px;
+          }
+        }
+
+        .videoModal_content {
+          position: absolute;
+          top: 12%;
+          left: 14%;
+          width: 74%;
+          height: 21%;
+          border-top: 1px solid rgba(44, 177, 255, .3);
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          overflow-y: scroll;
+
+          div {
+            width: 50%;
+            height: 2.4vw;
+            line-height: 2.4vw;
+            text-align: center;
+            border-bottom: 1px solid rgba(44, 177, 255, .1);
+
+            span {
+              font-size: 0.67vw;
+            }
+
+            &:nth-child(2n+1) {
+              border-right: 1px solid rgba(44, 177, 255, .1);
+            }
+
+            &:last-child {
+              border-bottom: none;
+              border-right: none;
+            }
+
+            &:hover {
+              background: rgba(17, 45, 106, 1);
+            }
+          }
+
+          &::-webkit-scrollbar {
+            /*滚动条整体样式*/
+            width: 0.53vw;
+            height: 0;
+          }
+
+          &::-webkit-scrollbar-button {
+            display: none;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            /*滚动条里面的滑块*/
+            border-radius: 2px;
+            background: rgba(43, 176, 255, 0.2);
+            border: 1px solid #000;
+          }
+
+          &::-webkit-scrollbar-track {
+            /*滚动条里面轨道背景*/
+            border-radius: 0;
+            background: rgba(4, 21, 73, 1);
+          }
+        }
+      }
+
+      .ant-modal-footer {
+        padding: 0;
+        border-top: none;
+
+        .ant-btn {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.oneVideoModal {
+  .ant-modal {
+    background: url("./images/alert_bg@2x.png") no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 0;
+    top: 50%;
+    margin-top: -25.83vw;
+
+    .ant-modal-title {
+      display: none;
+    }
+
+    .ant-modal-content {
+      background-color: transparent;
+      box-shadow: none;
+
+      .ant-modal-close {
+        top: 4.3vw;
+        right: 6vw;
+
+        .ant-modal-close-x {
+          font-size: 0.67vw;
+        }
+      }
+
+      .ant-modal-header {
+        padding: 0;
+        background-color: transparent;
+        border-bottom: none;
+      }
+
+      .ant-modal-body {
+        padding: 311px;
+
+        .oneVideoModal_title {
+          width: 74%;
+          position: absolute;
+          left: 13%;
+          top: 18%;
+          padding-top: 1.5%;
+          padding-bottom: 1.5%;
+          border-bottom: 1px solid rgba(44, 177, 255, .3);
+
+          span:nth-child(1) {
+            font-size: 16px;
+            letter-spacing: 1px;
+          }
+        }
+
+        .oneVideoModal_content {
+          position: absolute;
+          top: 33%;
+          left: 13%;
+          width: 74%;
+          height: 21%;
+        }
+      }
+
+      .ant-modal-footer {
+        padding: 0;
+        border-top: none;
+
+        .ant-btn {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.call_police_modal {
+  height: 100vw;
+
+  .ant-modal {
+    width: 35.33vw;
+    height: 28vw;
+    background: url("./images/alert_bg@2x.png") no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 0;
+    top: 13.73vw;
+
+    .ant-modal-title {
+      display: none;
+    }
+
+    .ant-modal-content {
+      background-color: transparent;
+      box-shadow: none;
+
+      .ant-modal-close {
+        top: 1.7vw;
+        right: 2.5vw;
+
+        .ant-modal-close-x {
+          font-size: 0.67vw;
+        }
+      }
+
+      .ant-modal-header {
+        padding: 0;
+        background-color: transparent;
+        border-bottom: none;
+      }
+
+      .ant-modal-body {
+        padding: 311px;
+
+        .modal_title {
+          width: 79%;
+          position: absolute;
+          left: 14%;
+          top: 10%;
+
+          span:nth-child(1) {
+            font-size: 16px;
+            display: inline-block;
+            margin-right: 20px;
+          }
+
+          span:nth-child(2) {
+            font-size: 16px;
+            color: #2CB1FF;
+            cursor: pointer;
+          }
+
+          span:last-child {
+            display: block;
+            width: 90%;
+            height: 1px;
+            background: rgba(44, 177, 255, .3);
+            margin-top: 0.53vw;
+          }
+        }
+
+        .modal_content {
+          position: absolute;
+          top: 15%;
+          left: 18%;
+          width: 62%;
+          box-sizing: border-box;
+
+          .call_police_person {
+            text-align: center;
+          }
+
+          .call_police_bg {
+            background: url("./images/call_police_person_bg.png") no-repeat;
+            background-size: 100% 100%;
+            width: 23.86vw;
+            height: 11.5vw;
+            padding-top: 20px;
+            padding-left: 1.53vw;
+            padding-bottom: 20px;
+
+            & p>span:first-child {
+              display: inline-block;
+              width: 20%;
+            }
+
+
+
+            .callAddress {
+              span {
+                display: inline-block;
+                vertical-align: top;
+              }
+
+              .callAddress_tit {}
+
+              .callAddress_con {
+                width: 80%;
+              }
+            }
+
+            .call_status {
+              .call_status_con {
+                display: inline-block;
+              }
+
+              .item_btn {
+                display: inline-block;
+                margin-left: 20px;
+
+                .ant-btn {
+                  width: 3.125vw;
+                  height: 1.25vw;
+                  display: inline-block;
+                  background-color: transparent;
+                  padding: 0;
+                  border-color: #2CB1FF;
+                  transition: color 1s;
+
+                  span {
+                    font-size: 0.625vw;
+                    color: #2CB1FF;
+                  }
+
+
+                  &:hover {
+                    background-color: #2CB1FF;
+
+                    span {
+                      color: #fff;
+                    }
+
+                  }
+                }
+
+              }
+
+            }
+
+          }
+        }
+      }
+
+      .ant-modal-footer {
+        padding: 0;
+        border-top: none;
+
+        .ant-btn {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.myModal2 {
+  .ant-modal {
+    width: 35.33vw;
+    height: 28.46vw;
+    background: url("./images/alert_bg@2x.png") no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 0;
+    top: 13.73vw;
+
+    .ant-modal-title {
+      display: none;
+    }
+
+    .ant-modal-content {
+      background-color: transparent;
+      box-shadow: none;
+
+      .ant-modal-close {
+        top: 1.7vw;
+        right: 2.5vw;
+
+        .ant-modal-close-x {
+          font-size: 0.67vw;
+        }
+      }
+
+      .ant-modal-header {
+        padding: 0;
+        background-color: transparent;
+        border-bottom: none;
+      }
+
+      .ant-modal-body {
+        padding: 311px;
+
+        .modal_title {
+          width: 79%;
+          position: absolute;
+          left: 14%;
+          top: 12%;
+
+          span:nth-child(1) {
+            font-size: 16px;
+          }
+
+          span:nth-child(2) {
+            display: block;
+            width: 90%;
+            height: 1px;
+            background: rgba(44, 177, 255, .3);
+            margin-top: 0.53vw;
+          }
+        }
+
+        .modal_content {
+
+          position: absolute;
+          top: 22%;
+          left: 16%;
+          width: 68%;
+
+          .mySearch {
+            .ant-input-group .ant-input {
+              background: transparent;
+              border-color: #2CB1FF;
+              color: rgba(255, 255, 255, .9);
+              height: 2.29vw;
+            }
+
+            .ant-btn-primary {
+              width: 6.25vw;
+              height: 2.29vw;
+              background-color: #2CB1FF;
+              color: rgba(255, 255, 255, .9);
+              border-color: #2CB1FF;
+            }
+          }
+
+          .show_data {
+            width: 23.96vw;
+            height: 10.42vw;
+            margin-top: 1.56vw;
+            border: 1px solid rgba(25, 59, 157, 1);
+
+            .data_title {
+              width: 100%;
+              height: 2.083vw;
+              background: rgba(13, 52, 142, 1);
+              display: inline-flex;
+              align-items: center;
+            }
+
+            .data_con {
+              height: 8.33vw;
+
+              .item:nth-child(odd) {
+                width: 100%;
+                height: 2vw;
+                background-color: transparent;
+                display: inline-flex;
+                align-items: center;
+              }
+
+              .item:nth-child(even) {
+                width: 100%;
+                height: 2vw;
+                background-color: #193B9D;
+                display: inline-flex;
+                align-items: center;
+              }
+            }
+
+            .area {
+              width: 5.2vw;
+              margin-left: 20px;
+              margin-right: 2.5vw;
+            }
+
+            .name {
+              width: 4.5vw;
+              margin-right: 2.5vw;
+            }
+
+          }
+        }
+      }
+
+      .ant-modal-footer {
+        padding: 0;
+        border-top: none;
+
+        .ant-btn {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.myModal3 {
+  .ant-modal {
+    width: 43.46vw;
+    height: 27.46vw;
+    background: url("./images/alert_bg@2x.png") no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 0;
+    top: 13.73vw;
+
+    .ant-modal-title {
+      display: none;
+    }
+
+    .ant-modal-content {
+      background-color: transparent;
+      box-shadow: none;
+
+      .ant-modal-close {
+        top: 1.7vw;
+        right: 3.4vw;
+
+        .ant-modal-close-x {
+          font-size: 0.67vw;
+        }
+      }
+
+      .ant-modal-header {
+        padding: 0;
+        background-color: transparent;
+        border-bottom: none;
+      }
+
+      .ant-modal-body {
+        padding: 311px;
+
+        .modal_title {
+          width: 79%;
+          position: absolute;
+          left: 14%;
+          top: 12%;
+
+          span:nth-child(1) {
+            font-size: 16px;
+          }
+
+          span:nth-child(2) {
+            display: block;
+            width: 90%;
+            height: 1px;
+            background: rgba(44, 177, 255, .3);
+            margin-top: 0.53vw;
+          }
+        }
+
+        .modal_content {
+          position: absolute;
+          top: 24%;
+          left: 18%;
+          width: 62%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          text-align: center;
+
+          .warn_pic {
+            img {
+              width: 1.73vw;
+              height: 1.46vw;
+            }
+
+            span {
+              display: block;
+              font-size: 0.66vw;
+            }
+          }
+
+          .warn_con {
+            margin-top: 2vw;
+            font-size: 0.93vw;
+          }
+
+          .myButton {
+            width: 14.93vw;
+            height: 1.46vw;
+            background: rgb(229, 51, 51);
+            border: none;
+            margin: 2vw auto;
+
+            span {
+              color: rgba(13, 52, 142);
+              font-weight: bold;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .ant-modal-footer {
+        padding: 0;
+        border-top: none;
+
+        .ant-btn {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.myModal8 {
+  .ant-modal {
+    width: 83.33vw;
+    height: 46.88vw;
+    background: url("./images/modal_bg.png") no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 0;
+    top: 5.73vw;
+
+    .ant-modal-title {
+      display: none;
+    }
+
+    .ant-modal-content {
+      background-color: transparent;
+      box-shadow: none;
+
+      .ant-modal-close {
+        top: 1.5vw;
+        right: 2.7vw;
+
+        .ant-modal-close-x {
+          font-size: 0.67vw;
+        }
+      }
+
+      .ant-modal-header {
+        padding: 0;
+        background-color: transparent;
+        border-bottom: none;
+      }
+
+      .ant-modal-body {
+        .modal_title {
+          width: 99%;
+          position: absolute;
+          left: 6%;
+          top: 7.5%;
+
+          span:nth-child(1) {
+            font-size: 16px;
+          }
+
+          span:nth-child(2) {
+            display: block;
+            width: 90%;
+            height: 1px;
+            background: rgba(44, 177, 255, .3);
+            margin-top: 0.3vw;
+          }
+        }
+
+        .modal_content {
+          top: 24%;
+          left: 18%;
+          width: 95.3%;
+          display: flex;
+          flex-direction: row;
+          padding-top: 3vw;
+
+          .left_con {
+            width: 46.87vw;
+            height: 34vw;
+            overflow-x: hidden;
+            overflow-y: auto;
+            border-right: 1px solid rgba(0, 141, 223, 0.3);
+            margin-top: 3vw;
+            margin-left: 6.55vw;
+
+            .shensu_modal {
+              .ant-form-item-label>label {
+                color: #fff
+              }
+
+              .registerDatePicker {
+                .ant-calendar-picker-input.ant-input {
+                  background: url("./images/shensu_modal_select.png") no-repeat;
+                  background-size: 100% 100%;
+                  color: #fff;
+                }
+
+                .ant-input:focus {
+                  background: url("./images/shensu_modal_select_focus.png") no-repeat;
+                  background-size: 100% 100%;
+                }
+
+                .has-error .ant-form-explain,
+                .has-error .ant-form-split {
+                  color: #2BB1FF;
+                }
+
+                .ant-select-dropdown-menu {
+                  padding: 0;
+                }
+
+                .ant-calendar-time-picker-select li {
+                  color: #000;
+                }
+
+                .ant-calendar-time .ant-calendar-day-select {
+                  color: #fff;
+                }
+
+
+              }
+
+              .timesDatePicker {
+                .ant-calendar-picker-input.ant-input {
+                  background: url("./images/shensu_modal_select.png") no-repeat;
+                  background-size: 100% 100%;
+                }
+
+                .ant-input:focus {
+                  background: url("./images/shensu_modal_select_focus.png") no-repeat;
+                  background-size: 100% 100%;
+                }
+
+                .has-error .ant-form-explain,
+                .has-error .ant-form-split {
+                  color: #2BB1FF;
+                }
+              }
+
+              .grade {
+                .ant-select-lg .ant-select-selection--single {
+                  height: 0;
+                }
+
+                .ant-select-selection {
+                  background: none;
+                }
+
+                .ant-select-lg .ant-select-selection__rendered {
+                  line-height: 0 !important;
+                }
+              }
+
+              .area_input,
+              .person_input {
+                background-color: transparent;
+                background: url('./images/shensu_modal_select.png') no-repeat;
+                background-size: 100% 100%;
+                border: none;
+                color: #fff;
+                outline: none;
+              }
+
+              .headline_input {
+                background-color: transparent;
+                background: url('./images/input_select.png') no-repeat;
+                background-size: 100% 100%;
+                border: none;
+                color: #fff;
+                outline: none;
+              }
+
+              .result_input,
+              .contents_input,
+              .remark_input {
+                background-color: transparent;
+                background: url('./images/input_select.png') no-repeat;
+                background-size: 100% 100%;
+                border: none;
+                color: #fff;
+                outline: none;
+                height: 0;
+                max-height: 0;
+
+              }
+
+              .area_input {
+                .ant-input:focus {
+                  border-color: transparent;
+                  border-right-width: 0 !important;
+                  outline: none;
+                  -webkit-box-shadow: none;
+                  box-shadow: none;
+                  background: url("./images/shensu_modal_select_focus.png") no-repeat;
+                  background-size: 100% 100%;
+                }
+              }
+
+              .person_input {
+                .person_input:focus {
+                  background: url("./images/shensu_modal_select_focus.png") no-repeat;
+                  background-size: 100% 100%;
+                }
+              }
+
+              .classify {
+                .ant-select-selection {
+                  background: transparent;
+                }
+              }
+
+              .okBtn,
+              .calcelBtn {
+                width: 5.21vw;
+                height: 1.56vw;
+                border-radius: 4px;
+                border: none;
+              }
+
+              .okBtn {
+                background: rgba(44, 177, 255, 1);
+                margin-right: 20px;
+              }
+
+              .calcelBtn {
+                background: rgba(130, 135, 154, 1);
+              }
+            }
+
+
+            /* IE 浏览器 */
+            & {
+              /*三角箭头的颜色*/
+              scrollbar-arrow-color: #07256D;
+              /*滚动条滑块按钮的颜色*/
+              scrollbar-face-color: rgba(0, 141, 223, 0.2);
+              /*滚动条整体颜色*/
+              scrollbar-highlight-color: #07256D;
+              /*滚动条阴影*/
+              scrollbar-shadow-color: #07256D;
+              /*滚动条轨道颜色*/
+              scrollbar-track-color: #07256D;
+            }
+
+            /* chrome & safari 浏览器 */
+            /*滚动条整体部分,必须要设置*/
+            &::-webkit-scrollbar {
+              /*滚动条整体样式*/
+              width: 0.26vw;
+              height: 0;
+            }
+
+            /*滚动条的上下两端的按钮*/
+            &::-webkit-scrollbar-button {
+              display: none;
+            }
+
+            /*滚动条的滑块按钮*/
+            &::-webkit-scrollbar-thumb {
+              /*滚动条里面的滑块*/
+              border-radius: 2px;
+              background: rgba(0, 141, 223, 0.2);
+            }
+
+            /*滚动条的轨道*/
+            &::-webkit-scrollbar-track {
+              /*滚动条里面轨道背景*/
+              border-radius: 0;
+            }
+          }
+
+          .right_con {
+            width: 33.85vw;
+            height: 34vw;
+            margin-left: 4vw;
+            margin-top: 6vw;
+            background: url("./images//liuchengtu.png") no-repeat;
+
+          }
+        }
+      }
+
+      .ant-modal-footer {
+        padding: 0;
+        border-top: none;
+
+        .ant-btn {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.myModal9 {
+  .ant-modal {
+    width: 83.33vw;
+    height: 46.88vw;
+    background: url("./images/modal_bg.png") no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 0;
+    top: 5.73vw;
+
+    .ant-modal-title {
+      display: none;
+    }
+
+    .ant-modal-content {
+      background-color: transparent;
+      box-shadow: none;
+
+      .ant-modal-close {
+        top: 1.5vw;
+        right: 2.7vw;
+
+        .ant-modal-close-x {
+          font-size: 0.67vw;
+        }
+      }
+
+      .ant-modal-header {
+        padding: 0;
+        background-color: transparent;
+        border-bottom: none;
+      }
+
+      .ant-modal-body {
+        .modal_title {
+          width: 99%;
+          position: absolute;
+          left: 6%;
+          top: 7.5%;
+
+          span:nth-child(1) {
+            font-size: 16px;
+          }
+
+          span:nth-child(2) {
+            display: block;
+            width: 90%;
+            height: 1px;
+            background: rgba(44, 177, 255, .3);
+            margin-top: 0.3vw;
+          }
+        }
+
+        .modal_content {
+          top: 24%;
+          left: 18%;
+          width: 95.3%;
+          display: flex;
+          flex-direction: row;
+          padding-top: 3vw;
+
+          .left_con {
+            width: 46.87vw;
+            height: 34vw;
+            overflow-x: hidden;
+            overflow-y: auto;
+            border-right: 1px solid rgba(0, 141, 223, 0.3);
+            margin-top: 3vw;
+            margin-left: 6.55vw;
+
+            .shensu_modal {
+              .ant-form-item-label>label {
+                color: #fff
+              }
+
+              .registerDatePicker {
+                .ant-calendar-picker-input.ant-input {
+                  color: #fff;
+                  border: none;
+                  background: url("./images/shensu_modal_select.png") no-repeat;
+                  background-size: 100% 100%;
+                }
+
+                .ant-input:focus {
+                  background: url("./images/shensu_modal_select_focus.png") no-repeat;
+                  background-size: 100% 100%;
+                }
+
+                .has-error .ant-form-explain,
+                .has-error .ant-form-split {
+                  color: #2BB1FF;
+                }
+
+                .ant-select-dropdown-menu {
+                  padding: 0;
+                }
+
+                .ant-calendar-time-picker-select li {
+                  color: #000;
+                }
+
+                .ant-calendar-time .ant-calendar-day-select {
+                  color: #fff;
+                }
+
+
+              }
+
+              .timesDatePicker {
+                .ant-calendar-picker-input.ant-input {
+                  background: url("./images/shensu_modal_select.png") no-repeat;
+                  background-size: 100% 100%;
+                }
+
+                .ant-input:focus {
+                  background: url("./images/shensu_modal_select_focus.png") no-repeat;
+                  background-size: 100% 100%;
+                }
+
+                .has-error .ant-form-explain,
+                .has-error .ant-form-split {
+                  color: #2BB1FF;
+                }
+              }
+
+              .grade {
+                .ant-select-lg .ant-select-selection--single {
+                  height: 0;
+                }
+
+                .ant-select-selection {
+                  background: none;
+                }
+
+                .ant-select-lg .ant-select-selection__rendered {
+                  line-height: 0 !important;
+                }
+              }
+
+              .area_input,
+              .person_input {
+                background-color: transparent;
+                background: url('./images/shensu_modal_select.png') no-repeat;
+                background-size: 100% 100%;
+                border: none;
+                color: #fff;
+                outline: none;
+              }
+
+              .headline_input {
+                background-color: transparent;
+                background: url('./images/input_select.png') no-repeat;
+                background-size: 100% 100%;
+                border: none;
+                color: #fff;
+                outline: none;
+              }
+
+              .result_input,
+              .contents_input,
+              .remark_input {
+                background-color: transparent;
+                background: url('./images/input_select.png') no-repeat;
+                background-size: 100% 100%;
+                border: none;
+                color: #fff;
+                outline: none;
+                height: 0;
+                max-height: 0;
+
+              }
+
+              .area_input {
+                .ant-input:focus {
+                  border-color: transparent;
+                  border-right-width: 0 !important;
+                  outline: none;
+                  -webkit-box-shadow: none;
+                  box-shadow: none;
+                  background: url("./images/shensu_modal_select_focus.png") no-repeat;
+                  background-size: 100% 100%;
+                }
+              }
+
+              .person_input {
+                .person_input:focus {
+                  background: url("./images/shensu_modal_select_focus.png") no-repeat;
+                  background-size: 100% 100%;
+                }
+              }
+
+              .classify {
+                .ant-select-selection {
+                  background: transparent;
+                }
+              }
+
+              .okBtn,
+              .calcelBtn {
+                width: 5.21vw;
+                height: 1.56vw;
+                border-radius: 4px;
+                border: none;
+              }
+
+              .okBtn {
+                background: rgba(44, 177, 255, 1);
+                margin-right: 20px;
+              }
+
+              .calcelBtn {
+                background: rgba(130, 135, 154, 1);
+              }
+            }
+
+
+            /* IE 浏览器 */
+            & {
+              /*三角箭头的颜色*/
+              scrollbar-arrow-color: #07256D;
+              /*滚动条滑块按钮的颜色*/
+              scrollbar-face-color: rgba(0, 141, 223, 0.2);
+              /*滚动条整体颜色*/
+              scrollbar-highlight-color: #07256D;
+              /*滚动条阴影*/
+              scrollbar-shadow-color: #07256D;
+              /*滚动条轨道颜色*/
+              scrollbar-track-color: #07256D;
+            }
+
+            /* chrome & safari 浏览器 */
+            &::-webkit-scrollbar {
+              /*滚动条整体样式*/
+              width: 0.53vw;
+              height: 0;
+            }
+
+            &::-webkit-scrollbar-button {
+              display: none;
+            }
+
+            &::-webkit-scrollbar-thumb {
+              /*滚动条里面的滑块*/
+              background: rgba(255, 255, 255, 0.2);
+              border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            &::-webkit-scrollbar-track {
+              /*滚动条里面轨道背景*/
+              background: transparent;
+            }
+          }
+
+          .right_con {
+            width: 33.85vw;
+            height: 34vw;
+            margin-left: 4vw;
+            margin-top: 6vw;
+            background: url("./images//liuchengtu.png") no-repeat;
+
+          }
+        }
+      }
+
+      .ant-modal-footer {
+        padding: 0;
+        border-top: none;
+
+        .ant-btn {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,334 @@
+.overview {
+  background: url("images/overview.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+  margin-bottom: 10px;
+}
+.overview span {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.area_distribution_title,
+.industry_distribution_title {
+  height: 42px;
+  line-height: 42px;
+  background: url("images/area_distribution_title_bg.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.area_distribution_title span,
+.industry_distribution_title span {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+html section main.projectManagement {
+  padding-top: 17px;
+}
+.projectManagement {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.projectManagement .total_amount {
+  width: 100%;
+  height: 292px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.projectManagement .total_amount .item {
+  width: 361px;
+  height: 292px;
+}
+.projectManagement .total_amount .item .item_tit {
+  height: 42px;
+  line-height: 42px;
+  background: url("images/total_title_bg.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+.projectManagement .total_amount .item .item_tit span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.projectManagement .total_amount .item .item_con {
+  height: 250px;
+  padding-top: 85px;
+  background: url("images/total_content_bg.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+.projectManagement .total_amount .item .item_con span:not(.extra):not(.extra_con) {
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+.projectManagement .total_amount .item .item_con .total_investment_content_con {
+  display: block;
+}
+.projectManagement .total_amount .item .item_con .total_investment_extra {
+  padding-left: 25%;
+  text-align: left;
+}
+.projectManagement .total_amount .item .item_con .total_investment_extra .extra {
+  display: inline-flex;
+  left: 78px;
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  line-height: 24px;
+  color: #cdd3e3;
+}
+.projectManagement .total_amount .item .item_con .total_investment_extra .extra1 {
+  width: auto;
+}
+.projectManagement .total_amount .item .item_con .total_investment_extra .extra2 {
+  width: 160px;
+}
+.projectManagement .total_amount .item .item_con .total_investment_extra .extra_con {
+  display: inline-flex;
+  width: 100px;
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  line-height: 24px;
+  color: #cdd3e3;
+}
+.projectManagement .total_amount .item .cumulative_completion_this_year_content,
+.projectManagement .total_amount .item .number_items_content {
+  padding-top: 20px;
+}
+.projectManagement .total_amount .cumulative_investment_this_year .cumulative_investment_this_year_content .edit_container {
+  position: relative;
+  height: 100%;
+}
+.projectManagement .total_amount .cumulative_investment_this_year .cumulative_investment_this_year_content .edit_container .edit_investment_input {
+  background: none;
+  border: none;
+  font-size: 0.93vw;
+  position: absolute;
+  right: 19px;
+  top: 5.5vw;
+  width: 15vw;
+  outline: none;
+  box-shadow: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+.projectManagement .total_amount .cumulative_investment_this_year .cumulative_investment_this_year_content .edit_container .myEdit {
+  position: absolute;
+  top: 8vw;
+  right: 8vw;
+}
+.projectManagement .total_amount .cumulative_investment_this_year .cumulative_investment_this_year_content .edit_container .myEdit span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+.projectManagement .total_amount .cumulative_investment_this_year .cumulative_investment_this_year_content .edit_container .mySave {
+  position: absolute;
+  top: 8vw;
+  right: 8vw;
+}
+.projectManagement .total_amount .cumulative_investment_this_year .cumulative_investment_this_year_content .edit_container .mySave span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2BB1FF;
+  opacity: 1;
+  letter-spacing: 1px;
+}
+.projectManagement .show_table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: 624px;
+}
+.projectManagement .show_table .item_tit {
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.projectManagement .show_table .projectList {
+  width: 1119px;
+  margin: 0;
+}
+.projectManagement .show_table .projectList .projectList_title {
+  height: 42px;
+  line-height: 42px;
+  background: url("images/projectList_title_bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.projectManagement .show_table .projectList .projectList_content {
+  height: 582px;
+  margin: 0;
+  background: url("images/projectList_content_bg.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+}
+.projectManagement .show_table .projectList .projectList_content .top_content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.projectManagement .show_table .projectList .projectList_content .top_content .right_item {
+  margin-right: 42px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.projectManagement .show_table .projectList .projectList_content .top_content .right_item .add_btn .ant-btn {
+  width: 70.64px;
+  height: 30px;
+  background: url("images/add_btn_border.png") no-repeat;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  border-color: transparent;
+}
+.projectManagement .show_table .projectList .projectList_content .top_content .right_item .more_btn {
+  margin-left: 29px;
+}
+.projectManagement .show_table .projectList .projectList_content .table_data {
+  width: 1077px;
+  height: 480px;
+  border: 1px solid #193B9D;
+  margin-top: 13px;
+  margin-left: 20px;
+}
+.projectManagement .show_table .projectList .projectList_content .table_data .myTable .ant-table-thead > tr > th {
+  background: #0D348E;
+}
+.projectManagement .show_table .projectList .projectList_content .table_data .myTable .ant-table-thead > tr > th {
+  border-bottom: none;
+}
+.projectManagement .show_table .projectList .projectList_content .table_data .myTable .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.projectManagement .show_table .projectList .projectList_content .table_data .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.projectManagement .show_table .projectList .projectList_content .table_data .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.projectManagement .show_table .projectList .projectList_content .table_data .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+  background: transparent;
+}
+.projectManagement .show_table .projectList .projectList_content .table_data .myTable .light-row {
+  background-color: #0D348E;
+}
+.projectManagement .show_table .projectList .projectList_content .table_data .myTable .ant-table-tbody > tr > td {
+  border-bottom: none;
+}
+.projectManagement .show_table .projectList .projectList_content .table_data .myTable .ant-progress-text {
+  color: rgba(255, 255, 255, 0.9);
+}
+.projectManagement .show_table .projectList .projectList_content .table_data .myTable .ant-table-row > a {
+  font-size: 0.67vw;
+  color: rgba(255, 255, 255, 0.9);
+}
+.projectManagement .show_table .projectList .projectList_content .table_data .myTable .ant-table-placeholder {
+  background: transparent;
+  border-top: none;
+  border-bottom: none;
+}
+.projectManagement .show_table .projectMap {
+  width: 740px;
+}
+.projectManagement .show_table .projectMap .projectMap_title {
+  height: 42px;
+  background: url("images/projectMap_title_bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.projectManagement .show_table .projectMap .projectMap_content {
+  height: 582px;
+  background: url("images/projectMap_content_bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  margin-right: 0;
+  background-color: transparent;
+}
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td {
+  text-align: center;
+}
+.ant-pagination-simple .ant-pagination-simple-pager input {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  margin-right: 0;
+}
+.ant-progress-inner {
+  background-color: #074893;
+}
+.projectManagement .show_table .projectList .projectList_content .table_data .myTable .ant-table-tbody > tr > td > a {
+  color: rgba(255, 255, 255, 0.9);
+}
+/************** 年份选择框 start *************/
+.year_select2 .ant-calendar-picker-input.ant-input {
+  color: rgba(255, 255, 255, 0.9);
+  border: none;
+  background: url("images/year_select_bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.ant-calendar,
+.ant-calendar-input,
+.ant-calendar-year-panel {
+  background-color: #0D348E;
+  border-color: #2BB1FF;
+}
+.ant-calendar-input-wrap,
+.ant-calendar-year-panel-header {
+  border-color: #2BB1FF;
+}
+.ant-calendar-year-panel-year,
+.ant-calendar-input {
+  color: rgba(255, 255, 255, 0.9);
+}
+.ant-calendar-year-panel-year:hover {
+  background: transparent;
+}
+.ant-calendar-header a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn::after {
+  color: #fff;
+  border-color: #fff;
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn::after {
+  color: #fff;
+  border-color: #fff;
+}
+.ant-calendar-picker-clear {
+  background: transparent;
+}
+/************** 年份选择框 end *************/
+/************** 通知提醒框 end *************/
+.ant-message .ant-message-notice-content {
+  width: 18.26vw;
+  height: 4.73vw;
+  line-height: 3.73vw;
+  background: url("images/message_bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.ant-message .ant-message-notice-content span {
+  font-size: 16px;
+  color: #2cb1ff;
+}
+/************** 通知提醒框 end *************/

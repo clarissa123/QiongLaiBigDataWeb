@@ -1,0 +1,89 @@
+.login_container{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-image: url(./../../images/login/bg.png);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login_content {
+    position: relative;
+    width: 1260px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .line {
+      position: absolute;
+      bottom: -12px;
+      left: 267px;
+      width: 1260px;
+      height: 35px;
+      background-image: url(./../../images/login/line.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .login_left {
+      flex: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 450px;
+      background-image: url(./../../images/login/circleBg.png);
+      background-repeat: no-repeat;
+      background-size: 96%;
+      background-position: 0 30px;
+    }
+    .login_right {
+      flex: 2;
+      height: 450px;
+      >h1 {
+        margin: 0 auto;
+        background-image: url(./../../images/login/title.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 30px;
+        width: 80%;
+      }
+      .login_box {
+        margin-top: 40px;
+        width: 100%;
+        min-height: 340px;
+        background-image: url(./../../images/login/loginBorder.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        .login-form {
+          padding: 92px 100px 0;
+          .login-form-button {
+            width: 100%;
+            border-radius: unset;
+            font-weight: bold;
+          }
+          :global {
+            .ant-input-affix-wrapper {
+              height: 40px;
+              background-color: #101C2A;
+              >input {
+                background-color: transparent;
+                border-radius: unset;
+                border: 1px solid rgba(0,255,255,1);
+                color: #1ED2FF;
+                padding-left: 40px;
+                // ml5
+                &::-webkit-input-placeholder { /* WebKit browsers */ 
+                  color: rgba(56,153,214,1) !important;
+                } 
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

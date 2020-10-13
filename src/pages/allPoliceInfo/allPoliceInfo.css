@@ -1,0 +1,105 @@
+.allPoliceInfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.93vw;
+  margin-left: 1vw;
+}
+.allPoliceInfo .overview {
+  background: url("images/overview.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  height: 2.13vw;
+  line-height: 2.13vw;
+}
+.allPoliceInfo .overview span {
+  font-size: 0.8vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.allPoliceInfo .allPoliceInfo_content {
+  height: 45.83vw;
+  margin-top: 0.53vw;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_title {
+  background: url("images/advanced_screening_title_bg.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  height: 2.13vw;
+  line-height: 2.13vw;
+  position: relative;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_title span {
+  font-size: 0.8vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table {
+  width: 100%;
+  height: 100%;
+  background: url('images//allPoliceInfo_table_bg.png') no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .item {
+  float: left;
+  width: 95.83vw;
+  height: 4.16vw;
+  margin: 1vw 1vw 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(360deg, #0d348e 0%, rgba(25, 57, 132, 0) 100%);
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .item .left {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .item .left .item_name {
+  width: 16%;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .item .left .item_phone {
+  width: 16%;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .item .left .item_time {
+  width: 16%;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .item .left .item_address {
+  width: 25%;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .item .right {
+  width: 10vw;
+  margin-right: 5.72vw;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .item .right .item_status {
+  display: inline-block;
+  margin-right: 1.56vw;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .item .right .item_btn {
+  display: inline-block;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .item .right .item_btn .ant-btn {
+  width: 3.125vw;
+  height: 1.25vw;
+  display: inline-block;
+  background-color: transparent;
+  padding: 0;
+  border-color: #2CB1FF;
+  transition: color 1s;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .item .right .item_btn .ant-btn span {
+  font-size: 0.625vw;
+  color: #2CB1FF;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .item .right .item_btn .ant-btn:hover {
+  background-color: #2CB1FF;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .item .right .item_btn .ant-btn:hover span {
+  color: #fff;
+}
+.allPoliceInfo .allPoliceInfo_content .allPoliceInfo_table .pagination {
+  position: absolute;
+  bottom: 1vw;
+  left: 47%;
+}

@@ -1,0 +1,412 @@
+@import "../../assets/style/myUI.less";
+
+html section main.projectList {
+  padding-top: 17px;
+}
+
+.projectList {
+  height: 100%;
+
+  .projectList_content {
+
+    .advanced_screening_title {
+      background: url("./images/advanced_screening_title_bg.png") no-repeat;
+      background-size: 100% 100%;
+      text-align: center;
+      height: 42px;
+      line-height: 42px;
+      position: relative;
+
+      .year_select2 {
+        left: 20px;
+        position: absolute;
+      }
+
+      .tit {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .add_btn {
+        position: absolute;
+        display: inline-block;
+        right: 20px;
+      }
+
+      i {
+        margin-right: 0.3vw;
+      }
+    }
+
+    .advanced_filter {
+      background: url("./images/advanced_filter_bg.png") no-repeat;
+      background-size: 100% 100%;
+      height: 283px;
+      box-sizing: border-box;
+
+      .advanced_filter_container {
+        width: 100%;
+        padding-top: 33px;
+        padding-left: 38px;
+
+        div {
+          margin-bottom: 33px;
+
+          span {
+            letter-spacing: 1px;
+            font-size: 16px;
+            cursor: pointer;
+          }
+
+          &>span:first-child {
+            margin-right: 25px;
+          }
+
+          &>span:nth-child(2) {
+            margin-right: 32px;
+          }
+
+          &>span:not(:nth-child(1)):not(:nth-child(2)) {
+            margin-right: 20px;
+          }
+        }
+
+        .area {
+          display: inline-block;
+          width: 100%;
+
+          .area_con {
+            width: 91%;
+            display: inline-block;
+            margin-bottom: 0;
+
+            span {
+              margin-right: 10px;
+            }
+          }
+        }
+
+        .distribution {
+          .distribution_con {
+            width: 90%;
+            display: inline-block;
+            margin-bottom: 0;
+          }
+        }
+
+        .total_investment {
+          .total_investment_con {
+            width: 90%;
+            display: inline-block;
+            margin-bottom: 0;
+          }
+        }
+
+        .investment_this_year {
+          .investment_this_year_con {
+            width: 90%;
+            display: inline-block;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .advanced_screening_content {
+      margin-top: 16px;
+      background: url("./images/advanced_screening_content_bg.png") no-repeat;
+      background-size: 100% 100%;
+      height: 583px;
+      overflow-y: scroll;
+
+      /* IE 浏览器 */
+      & {
+        /*三角箭头的颜色*/
+        scrollbar-arrow-color: #07256D;
+        /*滚动条滑块按钮的颜色*/
+        scrollbar-face-color: rgba(0, 141, 223, 0.2);
+        /*滚动条整体颜色*/
+        scrollbar-highlight-color: #07256D;
+        /*滚动条阴影*/
+        scrollbar-shadow-color: #07256D;
+        /*滚动条轨道颜色*/
+        scrollbar-track-color: #07256D;
+      }
+
+      /* chrome & safari 浏览器 */
+      &::-webkit-scrollbar {
+        /*滚动条整体样式*/
+        width: 12px;
+        height: 0;
+      }
+
+      &::-webkit-scrollbar-button {
+        display: none;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        /*滚动条里面的滑块*/
+        border-radius: 2px;
+        background: rgba(43, 176, 255, 0.2);
+        border: 1px solid #000;
+      }
+
+      &::-webkit-scrollbar-track {
+        /*滚动条里面轨道背景*/
+        border-radius: 0;
+        background: rgba(4, 21, 73, 1);
+      }
+
+      .advanced_screening_table {
+        height: 108px;
+        box-sizing: border-box;
+
+        .advanced_screening_table_box {
+          height: 100%;
+          background: linear-gradient(360deg, rgba(13, 52, 142, 1) 0%, rgba(25, 57, 132, 0) 100%);
+          margin-bottom: 10px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+
+          span {
+            font-size: 14px;
+          }
+
+          .name {
+            position: relative;
+            width: 8%;
+            text-align: center;
+
+            span {
+              display: inline-block;
+              font-size: 14px;
+              color: #2BB1FF;
+
+              &:before {
+                content: '';
+                background: url("./images/left_top.png") no-repeat;
+                background-size: 100% 100%;
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                left: -50px;
+                top: -10px;
+              }
+
+              &:after {
+                content: '';
+                background: url("./images/right_bottom.png") no-repeat;
+                background-size: 100% 100%;
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                right: -50px;
+                top: 50px;
+              }
+            }
+
+
+          }
+
+          .info {
+            width: 60vw;
+            height: 3.86vw;
+            border: 1px solid rgba(43, 177, 255, 0.17);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .townName {
+              width: 10vw;
+              margin-left: 2vw;
+            }
+
+            .fundsSourec {
+              width: 13vw;
+            }
+
+            .planDate {
+              width: 15vw;
+            }
+
+            .totals {
+              width: 12vw;
+            }
+
+            .classify {
+              width: 8vw;
+            }
+          }
+
+          .btn {
+
+            .details,
+            .edit {
+              span {
+                color: #2BB1FF;
+              }
+
+            }
+          }
+        }
+
+        .pagination {
+          .ant-pagination {
+            text-align: center;
+            font-size: 16px;
+            height: 100%;
+            line-height: 108px;
+          }
+
+          .ant-pagination-item a {
+            color: #9DD9FD;
+          }
+
+          .ant-pagination-item-active {
+            background: transparent;
+            border: none;
+          }
+
+          .ant-pagination-item-active a {
+            color: #2BB1FF;
+          }
+        }
+      }
+    }
+  }
+}
+
+.activeCls {
+  color: #2CB1FF;
+}
+
+.my_page {
+  text-align: center;
+
+  .ant-pagination-item {
+    color: #9DD9FD;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+}
+
+.myModalDel {
+  .ant-modal {
+    width: 43.46vw;
+    height: 27.46vw;
+    background: url("./images/alert_bg@2x.png") no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 0;
+    top: 13.73vw;
+
+    .ant-modal-title {
+      display: none;
+    }
+
+    .ant-modal-content {
+      background-color: transparent;
+      box-shadow: none;
+
+      .ant-modal-close {
+        top: 1.7vw;
+        right: 3.6vw;
+
+        .ant-modal-close-x {
+          font-size: 14px;
+        }
+      }
+
+      .ant-modal-header {
+        padding: 0;
+        background-color: transparent;
+        border-bottom: none;
+      }
+
+      .ant-modal-body {
+        padding: 311px;
+
+        .modal_title {
+          width: 79%;
+          position: absolute;
+          left: 14%;
+          top: 12%;
+
+          span:nth-child(1) {
+            font-size: 16px;
+          }
+
+          span:nth-child(2) {
+            display: block;
+            width: 90%;
+            height: 1px;
+            background: rgba(44, 177, 255, .3);
+            margin-top: 0.53vw;
+          }
+        }
+
+        .modal_content {
+          position: absolute;
+          top: 24%;
+          left: 18%;
+          width: 62%;
+
+
+          text-align: center;
+
+          .warn_pic {
+            margin: 0 auto;
+            display: inline-block;
+
+            img {
+              width: 33px;
+              height: 1.46vw;
+
+            }
+
+            span {
+              display: block;
+              font-size: 0.66vw;
+            }
+          }
+
+          .warn_con {
+            margin-top: 2vw;
+            font-size: 0.93vw;
+          }
+
+          .myButton {
+            width: 4.93vw;
+            height: 1.46vw;
+            background: rgb(229, 51, 51);
+            border: none;
+            margin: 2vw 3vw;
+
+            span {
+              color: rgba(13, 52, 142);
+              font-weight: bold;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .ant-modal-footer {
+        padding: 0;
+        border-top: none;
+
+        .ant-btn {
+          display: none;
+        }
+      }
+    }
+  }
+}

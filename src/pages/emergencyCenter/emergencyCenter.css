@@ -1,0 +1,1529 @@
+.overview {
+  background: url("images/overview.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+  margin-bottom: 10px;
+}
+.overview span {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.area_distribution_title,
+.industry_distribution_title {
+  height: 42px;
+  line-height: 42px;
+  background: url("images/area_distribution_title_bg.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.area_distribution_title span,
+.industry_distribution_title span {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.emergencyCenter {
+  height: 100%;
+  padding: 0;
+  margin: 20px 0 0 30px;
+  display: flex;
+  flex-direction: row;
+}
+.emergencyCenter .item_left {
+  width: 1365px;
+  display: flex;
+  flex-direction: column;
+}
+.emergencyCenter .item_left .item_left_one {
+  height: 680px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson {
+  width: 100%;
+  height: 680px;
+  box-sizing: border-box;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_title {
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  background: url("images/emer_title.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_title span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content {
+  height: 638px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 0.5vw;
+  background: url("images/responsibleContact_content_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+  padding-top: 20px;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll {
+  width: 100%;
+  height: 513px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* IE 浏览器 */
+  /*三角箭头的颜色*/
+  scrollbar-arrow-color: #07256D;
+  /*滚动条滑块按钮的颜色*/
+  scrollbar-face-color: rgba(0, 141, 223, 0.2);
+  /*滚动条整体颜色*/
+  scrollbar-highlight-color: #07256D;
+  /*滚动条阴影*/
+  scrollbar-shadow-color: #07256D;
+  /*滚动条轨道颜色*/
+  scrollbar-track-color: #07256D;
+  /* chrome & safari 浏览器 */
+  /*滚动条整体部分,必须要设置*/
+  /*滚动条的上下两端的按钮*/
+  /*滚动条的滑块按钮*/
+  /*滚动条的轨道*/
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 0.26vw;
+  height: 0;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll::-webkit-scrollbar-button {
+  display: none;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll::-webkit-scrollbar-thumb {
+  /*滚动条里面的滑块*/
+  border-radius: 2px;
+  background: rgba(0, 141, 223, 0.2);
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll::-webkit-scrollbar-track {
+  /*滚动条里面轨道背景*/
+  border-radius: 0;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll::after {
+  content: "";
+  flex: auto;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll .scenicChargePerson_content_container {
+  width: 23.07vw;
+  height: 68.4vw;
+  height: fit-content;
+  border: 1px solid #193b9d;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll .scenicChargePerson_content_container .shenSuInfo_item {
+  width: 23.07vw;
+  height: 2.96vw;
+  line-height: 2.96vw;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll .scenicChargePerson_content_container .shenSuInfo_item:nth-child(odd) {
+  background-color: #0d348e;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll .scenicChargePerson_content_container .shenSuInfo_item span {
+  font-size: 16px;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll .scenicChargePerson_content_container .shenSuInfo_item div:nth-child(1) {
+  padding-left: 20px;
+  padding-right: 2vw;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll .scenicChargePerson_content_container .shenSuInfo_item div:nth-child(2) {
+  padding-right: 1.56vw;
+  width: 5.2vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll .scenicChargePerson_content_container .shenSuInfo_item div:nth-child(3) {
+  width: 9.17vw;
+  padding-right: 2.06vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll .scenicChargePerson_content_container .shenSuInfo_item div:nth-child(4) {
+  cursor: pointer;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .scenicChargePerson_content_scroll .scenicChargePerson_content_container .shenSuInfo_item div:nth-child(4) span {
+  color: #3E82F7;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .addBtn {
+  margin: 1.3vw auto;
+  width: 10.94vw;
+  height: 2.6vw;
+  line-height: 2.6vw;
+  text-align: center;
+  background: #2ab0fe;
+  border: 1px solid #2ab0fe;
+  opacity: 1;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.emergencyCenter .item_left .item_left_one .chargePerson .scenicChargePerson .scenicChargePerson_content .addBtn span {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+.emergencyCenter .item_left .item_left_one .mapMonitoring {
+  width: 875px;
+}
+.emergencyCenter .item_left .item_left_one .mapMonitoring .mapMonitoring_title {
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  background: url("images/mapMonitoring_content_title_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.emergencyCenter .item_left .item_left_one .mapMonitoring .mapMonitoring_title .mapMonitoring_map {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+.emergencyCenter .item_left .item_left_one .mapMonitoring .mapMonitoring_title .mapMonitoring_allPoliceInfo {
+  display: inline-block;
+  position: absolute;
+  right: 0.83vw;
+}
+.emergencyCenter .item_left .item_left_one .mapMonitoring .mapMonitoring_title .mapMonitoring_allPoliceInfo:hover {
+  cursor: pointer;
+}
+.emergencyCenter .item_left .item_left_one .mapMonitoring .mapMonitoring_title .mapMonitoring_allPoliceInfo img {
+  display: inline-block;
+  margin-right: 0.15vw;
+}
+.emergencyCenter .item_left .item_left_one .mapMonitoring .mapMonitoring_title .mapMonitoring_allPoliceInfo span {
+  color: #32C889;
+}
+.emergencyCenter .item_left .item_left_one .mapMonitoring .mapMonitoring_content {
+  width: 100%;
+  height: 638px;
+  background: url("images/mapMonitor_content_bg.png") no-repeat;
+  box-sizing: border-box;
+}
+.emergencyCenter .item_left .item_left_one .mapMonitoring .mapMonitoring_content .rank_info {
+  width: 37%;
+  height: 20px;
+  background: url("images/rank_info.png") no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+.emergencyCenter .item_left .responsibleContact {
+  width: 1365px;
+  height: 288px;
+  margin-top: 11px;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_title {
+  height: 42px;
+  line-height: 42px;
+  background: url("images/mapMonitoring_content_title_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_title span:nth-child(1) {
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 3.6vw;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_title .find {
+  display: inline-block;
+  margin-right: 16px;
+  float: right;
+  cursor: pointer;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_title .find img {
+  width: 0.67vw;
+  height: 0.67vw;
+  margin-right: 0.26vw;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_title .find span {
+  font-family: Microsoft YaHei;
+  color: #32C889;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content {
+  height: 248px;
+  background: url("images/responsibleContact_content_bg@2x.png") no-repeat;
+  box-sizing: border-box;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 30px;
+  position: relative;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu {
+  margin-bottom: 30px;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select {
+  width: 170px;
+  height: 30px;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .ant-select-selection {
+  background: url("images/dropDown_menu.png") no-repeat;
+  background-size: 100% 100%;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .my_drop {
+  width: 6.77vw;
+  height: 6.77vw;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .my_drop .ant-select-dropdown {
+  line-height: 0.5;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .my_drop .drop_item {
+  padding: 0 !important;
+  width: 6.77vw;
+  height: 1.67vw !important;
+  line-height: 0 !important;
+  font-size: 0.7vw !important;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .my_drop .ant-select-dropdown {
+  background-color: #082875;
+  border: 1px solid #2bb1ff;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .my_drop .ant-calendar-selected-day .ant-calendar-date {
+  background: #1890ff;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .my_drop .ant-calendar-ok-btn ant-calendar-ok-btn-disabled {
+  background-color: #1890ff;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .my_drop .has-error .ant-form-explain,
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .my_drop .has-error .ant-form-split {
+  color: #1890ff;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .my_drop .ant-select-dropdown-menu-item {
+  color: #ffffff;
+  background-color: transparent;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .my_drop .ant-select-dropdown-menu-item {
+  padding: 0;
+  font-size: 16px;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .my_drop .ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+  background-color: #2bb1ff;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .my_drop .ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+  background-color: transparent;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_menu .ant-select .my_drop .ant-select-dropdown-menu-item-selected {
+  background-color: #2BB1FF;
+  font-weight: 400;
+  padding: 0;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_con {
+  height: 8vw;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  /* IE 浏览器 */
+  /*三角箭头的颜色*/
+  scrollbar-arrow-color: #07256D;
+  /*滚动条滑块按钮的颜色*/
+  scrollbar-face-color: rgba(0, 141, 223, 0.2);
+  /*滚动条整体颜色*/
+  scrollbar-highlight-color: #07256D;
+  /*滚动条阴影*/
+  scrollbar-shadow-color: #07256D;
+  /*滚动条轨道颜色*/
+  scrollbar-track-color: #07256D;
+  /* chrome & safari 浏览器 */
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_con::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 12px;
+  height: 0;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_con::-webkit-scrollbar-button {
+  display: none;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_con::-webkit-scrollbar-thumb {
+  /*滚动条里面的滑块*/
+  border-radius: 2px;
+  background: rgba(43, 176, 255, 0.2);
+  border: 1px solid #000;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_con::-webkit-scrollbar-track {
+  /*滚动条里面轨道背景*/
+  border-radius: 0;
+  background: #041549;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_con::after {
+  content: "";
+  flex: auto;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_con div {
+  width: 30%;
+  margin-left: 25px;
+  margin-bottom: 1.67vw;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_con div img {
+  width: 0.66vw;
+  height: 0.66vw;
+  vertical-align: middle;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_con div span {
+  vertical-align: middle;
+  margin-left: 0.53vw;
+}
+.emergencyCenter .item_left .responsibleContact .responsibleContact_content .responsibleContact_content_container .dropDown_con span {
+  font-size: 16px;
+}
+.emergencyCenter .item_right {
+  margin-left: 10px;
+  width: 483px;
+  box-sizing: border-box;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_title {
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+  background: url("images/geologicalEarlyWarning_title_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_title span:nth-child(1) {
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 3.6vw;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_title .more {
+  display: inline-block;
+  margin-right: 16px;
+  float: right;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_title .more img {
+  width: 0.67vw;
+  height: 0.67vw;
+  margin-right: 0.26vw;
+  vertical-align: middle;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_title .more span {
+  font-family: Microsoft YaHei;
+  vertical-align: middle;
+  color: #32C889;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_content {
+  height: 7.2vw;
+  background: url("images/geologicalEarlyWarning_content_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+  padding-top: 27px;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_content .geologicalEarlyWarning_row {
+  width: 455px;
+  height: 86px;
+  background: linear-gradient(360deg, #0d348e 0%, rgba(25, 57, 132, 0) 100%);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 14px 14px 14px;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_content .geologicalEarlyWarning_row .warn {
+  display: flex;
+  flex-direction: column;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_content .geologicalEarlyWarning_row .warn .warn_pic {
+  width: 32.77px;
+  height: 29.03px;
+  margin: 0 auto;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_content .geologicalEarlyWarning_row .warn .warn_pic img {
+  width: 80%;
+  height: 80%;
+  display: inline-block;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_content .geologicalEarlyWarning_row .warn .warn_time span {
+  display: inline-block;
+  font-size: 14px;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_content .geologicalEarlyWarning_row .warn_con {
+  width: 15.33vw;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_content .geologicalEarlyWarning_row .myLook {
+  width: 50px;
+  height: 29px;
+  line-height: 29px;
+  background: #F5AB6B;
+  border: none;
+  padding: 0;
+}
+.emergencyCenter .item_right .geologicalEarlyWarning .geologicalEarlyWarning_content .geologicalEarlyWarning_row .myLook span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0D348E;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_title {
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+  background: url("images/geologicalEarlyWarning_title_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_title span:nth-child(1) {
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 3.6vw;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_title .more {
+  display: inline-block;
+  margin-right: 16px;
+  float: right;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_title .more img {
+  width: 0.67vw;
+  height: 0.67vw;
+  margin-right: 0.26vw;
+  vertical-align: middle;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_title .more span {
+  font-family: Microsoft YaHei;
+  color: #32C889;
+  vertical-align: middle;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_content {
+  height: 456px;
+  background: url("images/trafficEarlyWarning_content_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 11px;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_content .trafficEarlyWarning_row {
+  width: 455px;
+  height: 86px;
+  background: linear-gradient(360deg, #0d348e 0%, rgba(25, 57, 132, 0) 100%);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 14px 27px 14px;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_content .trafficEarlyWarning_row .warn {
+  display: flex;
+  flex-direction: column;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_content .trafficEarlyWarning_row .warn .warn_pic {
+  width: 32.77px;
+  height: 29.03px;
+  margin: 0 auto;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_content .trafficEarlyWarning_row .warn .warn_pic img {
+  width: 80%;
+  height: 80%;
+  display: inline-block;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_content .trafficEarlyWarning_row .warn .warn_time span {
+  display: inline-block;
+  font-size: 14px;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_content .trafficEarlyWarning_row .warn_con {
+  width: 15.33vw;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_content .trafficEarlyWarning_row .myLook {
+  width: 2.66vw;
+  height: 1.46vw;
+  line-height: 1.46vw;
+  background: #F5AB6B;
+  border: none;
+  padding: 0;
+}
+.emergencyCenter .item_right .trafficEarlyWarning .trafficEarlyWarning_content .trafficEarlyWarning_row .myLook span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0D348E;
+}
+.emergencyCenter .item_right .weatherWarning {
+  height: 279px;
+  margin-bottom: 12px;
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_title {
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+  background: url("images/geologicalEarlyWarning_title_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_title span:nth-child(1) {
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 3.6vw;
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_title .more {
+  display: inline-block;
+  margin-right: 16px;
+  float: right;
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_title .more img {
+  width: 0.67vw;
+  height: 0.67vw;
+  margin-right: 0.26vw;
+  vertical-align: middle;
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_title .more span {
+  font-family: Microsoft YaHei;
+  color: #32C889;
+  vertical-align: middle;
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_content {
+  height: 237px;
+  background: url("images/trafficEarlyWarning_content_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+  padding-top: 26px;
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_content .weatherWarning_row {
+  width: 455px;
+  height: 86px;
+  background: linear-gradient(360deg, #0d348e 0%, rgba(25, 57, 132, 0) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 14px 14px 14px;
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_content .weatherWarning_row .warn {
+  display: flex;
+  flex-direction: column;
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_content .weatherWarning_row .warn .warn_pic {
+  width: 32.77px;
+  height: 29.03px;
+  margin: 0 auto;
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_content .weatherWarning_row .warn .warn_pic img {
+  width: 80%;
+  height: 80%;
+  display: inline-block;
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_content .weatherWarning_row .warn .warn_time span {
+  display: inline-block;
+  font-size: 14px;
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_content .weatherWarning_row .warn_con {
+  width: 15.33vw;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_content .weatherWarning_row .myLook {
+  width: 50px;
+  height: 29px;
+  line-height: 29px;
+  border: none;
+  padding: 0;
+}
+.emergencyCenter .item_right .weatherWarning .weatherWarning_content .weatherWarning_row .myLook span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0D348E;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+}
+.videoModal .ant-modal {
+  background: url("images/alert_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 0;
+  top: 50%;
+  margin-top: -6.65vw;
+}
+.videoModal .ant-modal .ant-modal-title {
+  display: none;
+}
+.videoModal .ant-modal .ant-modal-content {
+  background-color: transparent;
+  box-shadow: none;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-close {
+  top: 0.5vw;
+  right: 2.2vw;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-close .ant-modal-close-x {
+  font-size: 0.67vw;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-header {
+  padding: 0;
+  background-color: transparent;
+  border-bottom: none;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-body {
+  padding: 311px;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-body .videoModal_title {
+  width: 79%;
+  position: absolute;
+  left: 14%;
+  top: 7%;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-body .videoModal_title span:nth-child(1) {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-body .videoModal_content {
+  position: absolute;
+  top: 12%;
+  left: 14%;
+  width: 74%;
+  height: 21%;
+  border-top: 1px solid rgba(44, 177, 255, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-body .videoModal_content div {
+  width: 50%;
+  height: 2.4vw;
+  line-height: 2.4vw;
+  text-align: center;
+  border-bottom: 1px solid rgba(44, 177, 255, 0.1);
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-body .videoModal_content div span {
+  font-size: 0.67vw;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-body .videoModal_content div:nth-child(2n+1) {
+  border-right: 1px solid rgba(44, 177, 255, 0.1);
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-body .videoModal_content div:last-child {
+  border-bottom: none;
+  border-right: none;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-body .videoModal_content div:hover {
+  background: #112d6a;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-body .videoModal_content::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 0.53vw;
+  height: 0;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-body .videoModal_content::-webkit-scrollbar-button {
+  display: none;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-body .videoModal_content::-webkit-scrollbar-thumb {
+  /*滚动条里面的滑块*/
+  border-radius: 2px;
+  background: rgba(43, 176, 255, 0.2);
+  border: 1px solid #000;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-body .videoModal_content::-webkit-scrollbar-track {
+  /*滚动条里面轨道背景*/
+  border-radius: 0;
+  background: #041549;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-footer {
+  padding: 0;
+  border-top: none;
+}
+.videoModal .ant-modal .ant-modal-content .ant-modal-footer .ant-btn {
+  display: none;
+}
+.oneVideoModal .ant-modal {
+  background: url("images/alert_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 0;
+  top: 50%;
+  margin-top: -25.83vw;
+}
+.oneVideoModal .ant-modal .ant-modal-title {
+  display: none;
+}
+.oneVideoModal .ant-modal .ant-modal-content {
+  background-color: transparent;
+  box-shadow: none;
+}
+.oneVideoModal .ant-modal .ant-modal-content .ant-modal-close {
+  top: 4.3vw;
+  right: 6vw;
+}
+.oneVideoModal .ant-modal .ant-modal-content .ant-modal-close .ant-modal-close-x {
+  font-size: 0.67vw;
+}
+.oneVideoModal .ant-modal .ant-modal-content .ant-modal-header {
+  padding: 0;
+  background-color: transparent;
+  border-bottom: none;
+}
+.oneVideoModal .ant-modal .ant-modal-content .ant-modal-body {
+  padding: 311px;
+}
+.oneVideoModal .ant-modal .ant-modal-content .ant-modal-body .oneVideoModal_title {
+  width: 74%;
+  position: absolute;
+  left: 13%;
+  top: 18%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  border-bottom: 1px solid rgba(44, 177, 255, 0.3);
+}
+.oneVideoModal .ant-modal .ant-modal-content .ant-modal-body .oneVideoModal_title span:nth-child(1) {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.oneVideoModal .ant-modal .ant-modal-content .ant-modal-body .oneVideoModal_content {
+  position: absolute;
+  top: 33%;
+  left: 13%;
+  width: 74%;
+  height: 21%;
+}
+.oneVideoModal .ant-modal .ant-modal-content .ant-modal-footer {
+  padding: 0;
+  border-top: none;
+}
+.oneVideoModal .ant-modal .ant-modal-content .ant-modal-footer .ant-btn {
+  display: none;
+}
+.call_police_modal {
+  height: 100vw;
+}
+.call_police_modal .ant-modal {
+  width: 35.33vw;
+  height: 28vw;
+  background: url("images/alert_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 0;
+  top: 13.73vw;
+}
+.call_police_modal .ant-modal .ant-modal-title {
+  display: none;
+}
+.call_police_modal .ant-modal .ant-modal-content {
+  background-color: transparent;
+  box-shadow: none;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-close {
+  top: 1.7vw;
+  right: 2.5vw;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-close .ant-modal-close-x {
+  font-size: 0.67vw;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-header {
+  padding: 0;
+  background-color: transparent;
+  border-bottom: none;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body {
+  padding: 311px;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_title {
+  width: 79%;
+  position: absolute;
+  left: 14%;
+  top: 10%;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_title span:nth-child(1) {
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_title span:nth-child(2) {
+  font-size: 16px;
+  color: #2CB1FF;
+  cursor: pointer;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_title span:last-child {
+  display: block;
+  width: 90%;
+  height: 1px;
+  background: rgba(44, 177, 255, 0.3);
+  margin-top: 0.53vw;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_content {
+  position: absolute;
+  top: 15%;
+  left: 18%;
+  width: 62%;
+  box-sizing: border-box;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_content .call_police_person {
+  text-align: center;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_content .call_police_bg {
+  background: url("images/call_police_person_bg.png") no-repeat;
+  background-size: 100% 100%;
+  width: 23.86vw;
+  height: 11.5vw;
+  padding-top: 20px;
+  padding-left: 1.53vw;
+  padding-bottom: 20px;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_content .call_police_bg p > span:first-child {
+  display: inline-block;
+  width: 20%;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_content .call_police_bg .callAddress span {
+  display: inline-block;
+  vertical-align: top;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_content .call_police_bg .callAddress .callAddress_con {
+  width: 80%;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_content .call_police_bg .call_status .call_status_con {
+  display: inline-block;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_content .call_police_bg .call_status .item_btn {
+  display: inline-block;
+  margin-left: 20px;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_content .call_police_bg .call_status .item_btn .ant-btn {
+  width: 3.125vw;
+  height: 1.25vw;
+  display: inline-block;
+  background-color: transparent;
+  padding: 0;
+  border-color: #2CB1FF;
+  transition: color 1s;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_content .call_police_bg .call_status .item_btn .ant-btn span {
+  font-size: 0.625vw;
+  color: #2CB1FF;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_content .call_police_bg .call_status .item_btn .ant-btn:hover {
+  background-color: #2CB1FF;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-body .modal_content .call_police_bg .call_status .item_btn .ant-btn:hover span {
+  color: #fff;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-footer {
+  padding: 0;
+  border-top: none;
+}
+.call_police_modal .ant-modal .ant-modal-content .ant-modal-footer .ant-btn {
+  display: none;
+}
+.myModal2 .ant-modal {
+  width: 35.33vw;
+  height: 28.46vw;
+  background: url("images/alert_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 0;
+  top: 13.73vw;
+}
+.myModal2 .ant-modal .ant-modal-title {
+  display: none;
+}
+.myModal2 .ant-modal .ant-modal-content {
+  background-color: transparent;
+  box-shadow: none;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-close {
+  top: 1.7vw;
+  right: 2.5vw;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-close .ant-modal-close-x {
+  font-size: 0.67vw;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-header {
+  padding: 0;
+  background-color: transparent;
+  border-bottom: none;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body {
+  padding: 311px;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body .modal_title {
+  width: 79%;
+  position: absolute;
+  left: 14%;
+  top: 12%;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body .modal_title span:nth-child(1) {
+  font-size: 16px;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body .modal_title span:nth-child(2) {
+  display: block;
+  width: 90%;
+  height: 1px;
+  background: rgba(44, 177, 255, 0.3);
+  margin-top: 0.53vw;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body .modal_content {
+  position: absolute;
+  top: 22%;
+  left: 16%;
+  width: 68%;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body .modal_content .mySearch .ant-input-group .ant-input {
+  background: transparent;
+  border-color: #2CB1FF;
+  color: rgba(255, 255, 255, 0.9);
+  height: 2.29vw;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body .modal_content .mySearch .ant-btn-primary {
+  width: 6.25vw;
+  height: 2.29vw;
+  background-color: #2CB1FF;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: #2CB1FF;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body .modal_content .show_data {
+  width: 23.96vw;
+  height: 10.42vw;
+  margin-top: 1.56vw;
+  border: 1px solid #193b9d;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body .modal_content .show_data .data_title {
+  width: 100%;
+  height: 2.083vw;
+  background: #0d348e;
+  display: inline-flex;
+  align-items: center;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body .modal_content .show_data .data_con {
+  height: 8.33vw;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body .modal_content .show_data .data_con .item:nth-child(odd) {
+  width: 100%;
+  height: 2vw;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body .modal_content .show_data .data_con .item:nth-child(even) {
+  width: 100%;
+  height: 2vw;
+  background-color: #193B9D;
+  display: inline-flex;
+  align-items: center;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body .modal_content .show_data .area {
+  width: 5.2vw;
+  margin-left: 20px;
+  margin-right: 2.5vw;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-body .modal_content .show_data .name {
+  width: 4.5vw;
+  margin-right: 2.5vw;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-footer {
+  padding: 0;
+  border-top: none;
+}
+.myModal2 .ant-modal .ant-modal-content .ant-modal-footer .ant-btn {
+  display: none;
+}
+.myModal3 .ant-modal {
+  width: 43.46vw;
+  height: 27.46vw;
+  background: url("images/alert_bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 0;
+  top: 13.73vw;
+}
+.myModal3 .ant-modal .ant-modal-title {
+  display: none;
+}
+.myModal3 .ant-modal .ant-modal-content {
+  background-color: transparent;
+  box-shadow: none;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-close {
+  top: 1.7vw;
+  right: 3.4vw;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-close .ant-modal-close-x {
+  font-size: 0.67vw;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-header {
+  padding: 0;
+  background-color: transparent;
+  border-bottom: none;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-body {
+  padding: 311px;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-body .modal_title {
+  width: 79%;
+  position: absolute;
+  left: 14%;
+  top: 12%;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-body .modal_title span:nth-child(1) {
+  font-size: 16px;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-body .modal_title span:nth-child(2) {
+  display: block;
+  width: 90%;
+  height: 1px;
+  background: rgba(44, 177, 255, 0.3);
+  margin-top: 0.53vw;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-body .modal_content {
+  position: absolute;
+  top: 24%;
+  left: 18%;
+  width: 62%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-body .modal_content .warn_pic img {
+  width: 1.73vw;
+  height: 1.46vw;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-body .modal_content .warn_pic span {
+  display: block;
+  font-size: 0.66vw;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-body .modal_content .warn_con {
+  margin-top: 2vw;
+  font-size: 0.93vw;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-body .modal_content .myButton {
+  width: 14.93vw;
+  height: 1.46vw;
+  background: #e53333;
+  border: none;
+  margin: 2vw auto;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-body .modal_content .myButton span {
+  color: rgba(13, 52, 142);
+  font-weight: bold;
+  font-size: 16px;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-footer {
+  padding: 0;
+  border-top: none;
+}
+.myModal3 .ant-modal .ant-modal-content .ant-modal-footer .ant-btn {
+  display: none;
+}
+.myModal8 .ant-modal {
+  width: 83.33vw;
+  height: 46.88vw;
+  background: url("images/modal_bg.png") no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 0;
+  top: 5.73vw;
+}
+.myModal8 .ant-modal .ant-modal-title {
+  display: none;
+}
+.myModal8 .ant-modal .ant-modal-content {
+  background-color: transparent;
+  box-shadow: none;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-close {
+  top: 1.5vw;
+  right: 2.7vw;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-close .ant-modal-close-x {
+  font-size: 0.67vw;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-header {
+  padding: 0;
+  background-color: transparent;
+  border-bottom: none;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_title {
+  width: 99%;
+  position: absolute;
+  left: 6%;
+  top: 7.5%;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_title span:nth-child(1) {
+  font-size: 16px;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_title span:nth-child(2) {
+  display: block;
+  width: 90%;
+  height: 1px;
+  background: rgba(44, 177, 255, 0.3);
+  margin-top: 0.3vw;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content {
+  top: 24%;
+  left: 18%;
+  width: 95.3%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 3vw;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con {
+  width: 46.87vw;
+  height: 34vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid rgba(0, 141, 223, 0.3);
+  margin-top: 3vw;
+  margin-left: 6.55vw;
+  /* IE 浏览器 */
+  /*三角箭头的颜色*/
+  scrollbar-arrow-color: #07256D;
+  /*滚动条滑块按钮的颜色*/
+  scrollbar-face-color: rgba(0, 141, 223, 0.2);
+  /*滚动条整体颜色*/
+  scrollbar-highlight-color: #07256D;
+  /*滚动条阴影*/
+  scrollbar-shadow-color: #07256D;
+  /*滚动条轨道颜色*/
+  scrollbar-track-color: #07256D;
+  /* chrome & safari 浏览器 */
+  /*滚动条整体部分,必须要设置*/
+  /*滚动条的上下两端的按钮*/
+  /*滚动条的滑块按钮*/
+  /*滚动条的轨道*/
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .ant-form-item-label > label {
+  color: #fff;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .ant-calendar-picker-input.ant-input {
+  background: url("images/shensu_modal_select.png") no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .ant-input:focus {
+  background: url("images/shensu_modal_select_focus.png") no-repeat;
+  background-size: 100% 100%;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .has-error .ant-form-explain,
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .has-error .ant-form-split {
+  color: #2BB1FF;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .ant-select-dropdown-menu {
+  padding: 0;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .ant-calendar-time-picker-select li {
+  color: #000;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .ant-calendar-time .ant-calendar-day-select {
+  color: #fff;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .timesDatePicker .ant-calendar-picker-input.ant-input {
+  background: url("images/shensu_modal_select.png") no-repeat;
+  background-size: 100% 100%;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .timesDatePicker .ant-input:focus {
+  background: url("images/shensu_modal_select_focus.png") no-repeat;
+  background-size: 100% 100%;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .timesDatePicker .has-error .ant-form-explain,
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .timesDatePicker .has-error .ant-form-split {
+  color: #2BB1FF;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .grade .ant-select-lg .ant-select-selection--single {
+  height: 0;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .grade .ant-select-selection {
+  background: none;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .grade .ant-select-lg .ant-select-selection__rendered {
+  line-height: 0 !important;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .area_input,
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .person_input {
+  background-color: transparent;
+  background: url('images/shensu_modal_select.png') no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .headline_input {
+  background-color: transparent;
+  background: url('images/input_select.png') no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .result_input,
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .contents_input,
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .remark_input {
+  background-color: transparent;
+  background: url('images/input_select.png') no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  color: #fff;
+  outline: none;
+  height: 0;
+  max-height: 0;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .area_input .ant-input:focus {
+  border-color: transparent;
+  border-right-width: 0 !important;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: url("images/shensu_modal_select_focus.png") no-repeat;
+  background-size: 100% 100%;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .person_input .person_input:focus {
+  background: url("images/shensu_modal_select_focus.png") no-repeat;
+  background-size: 100% 100%;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .classify .ant-select-selection {
+  background: transparent;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .okBtn,
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .calcelBtn {
+  width: 5.21vw;
+  height: 1.56vw;
+  border-radius: 4px;
+  border: none;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .okBtn {
+  background: #2cb1ff;
+  margin-right: 20px;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .calcelBtn {
+  background: #82879a;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 0.26vw;
+  height: 0;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con::-webkit-scrollbar-button {
+  display: none;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con::-webkit-scrollbar-thumb {
+  /*滚动条里面的滑块*/
+  border-radius: 2px;
+  background: rgba(0, 141, 223, 0.2);
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con::-webkit-scrollbar-track {
+  /*滚动条里面轨道背景*/
+  border-radius: 0;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-body .modal_content .right_con {
+  width: 33.85vw;
+  height: 34vw;
+  margin-left: 4vw;
+  margin-top: 6vw;
+  background: url("images//liuchengtu.png") no-repeat;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-footer {
+  padding: 0;
+  border-top: none;
+}
+.myModal8 .ant-modal .ant-modal-content .ant-modal-footer .ant-btn {
+  display: none;
+}
+.myModal9 .ant-modal {
+  width: 83.33vw;
+  height: 46.88vw;
+  background: url("images/modal_bg.png") no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 0;
+  top: 5.73vw;
+}
+.myModal9 .ant-modal .ant-modal-title {
+  display: none;
+}
+.myModal9 .ant-modal .ant-modal-content {
+  background-color: transparent;
+  box-shadow: none;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-close {
+  top: 1.5vw;
+  right: 2.7vw;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-close .ant-modal-close-x {
+  font-size: 0.67vw;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-header {
+  padding: 0;
+  background-color: transparent;
+  border-bottom: none;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_title {
+  width: 99%;
+  position: absolute;
+  left: 6%;
+  top: 7.5%;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_title span:nth-child(1) {
+  font-size: 16px;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_title span:nth-child(2) {
+  display: block;
+  width: 90%;
+  height: 1px;
+  background: rgba(44, 177, 255, 0.3);
+  margin-top: 0.3vw;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content {
+  top: 24%;
+  left: 18%;
+  width: 95.3%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 3vw;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con {
+  width: 46.87vw;
+  height: 34vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid rgba(0, 141, 223, 0.3);
+  margin-top: 3vw;
+  margin-left: 6.55vw;
+  /* IE 浏览器 */
+  /*三角箭头的颜色*/
+  scrollbar-arrow-color: #07256D;
+  /*滚动条滑块按钮的颜色*/
+  scrollbar-face-color: rgba(0, 141, 223, 0.2);
+  /*滚动条整体颜色*/
+  scrollbar-highlight-color: #07256D;
+  /*滚动条阴影*/
+  scrollbar-shadow-color: #07256D;
+  /*滚动条轨道颜色*/
+  scrollbar-track-color: #07256D;
+  /* chrome & safari 浏览器 */
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .ant-form-item-label > label {
+  color: #fff;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .ant-calendar-picker-input.ant-input {
+  color: #fff;
+  border: none;
+  background: url("images/shensu_modal_select.png") no-repeat;
+  background-size: 100% 100%;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .ant-input:focus {
+  background: url("images/shensu_modal_select_focus.png") no-repeat;
+  background-size: 100% 100%;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .has-error .ant-form-explain,
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .has-error .ant-form-split {
+  color: #2BB1FF;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .ant-select-dropdown-menu {
+  padding: 0;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .ant-calendar-time-picker-select li {
+  color: #000;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .registerDatePicker .ant-calendar-time .ant-calendar-day-select {
+  color: #fff;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .timesDatePicker .ant-calendar-picker-input.ant-input {
+  background: url("images/shensu_modal_select.png") no-repeat;
+  background-size: 100% 100%;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .timesDatePicker .ant-input:focus {
+  background: url("images/shensu_modal_select_focus.png") no-repeat;
+  background-size: 100% 100%;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .timesDatePicker .has-error .ant-form-explain,
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .timesDatePicker .has-error .ant-form-split {
+  color: #2BB1FF;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .grade .ant-select-lg .ant-select-selection--single {
+  height: 0;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .grade .ant-select-selection {
+  background: none;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .grade .ant-select-lg .ant-select-selection__rendered {
+  line-height: 0 !important;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .area_input,
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .person_input {
+  background-color: transparent;
+  background: url('images/shensu_modal_select.png') no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .headline_input {
+  background-color: transparent;
+  background: url('images/input_select.png') no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .result_input,
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .contents_input,
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .remark_input {
+  background-color: transparent;
+  background: url('images/input_select.png') no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  color: #fff;
+  outline: none;
+  height: 0;
+  max-height: 0;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .area_input .ant-input:focus {
+  border-color: transparent;
+  border-right-width: 0 !important;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: url("images/shensu_modal_select_focus.png") no-repeat;
+  background-size: 100% 100%;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .person_input .person_input:focus {
+  background: url("images/shensu_modal_select_focus.png") no-repeat;
+  background-size: 100% 100%;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .classify .ant-select-selection {
+  background: transparent;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .okBtn,
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .calcelBtn {
+  width: 5.21vw;
+  height: 1.56vw;
+  border-radius: 4px;
+  border: none;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .okBtn {
+  background: #2cb1ff;
+  margin-right: 20px;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con .shensu_modal .calcelBtn {
+  background: #82879a;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 0.53vw;
+  height: 0;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con::-webkit-scrollbar-button {
+  display: none;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con::-webkit-scrollbar-thumb {
+  /*滚动条里面的滑块*/
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .left_con::-webkit-scrollbar-track {
+  /*滚动条里面轨道背景*/
+  background: transparent;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-body .modal_content .right_con {
+  width: 33.85vw;
+  height: 34vw;
+  margin-left: 4vw;
+  margin-top: 6vw;
+  background: url("images//liuchengtu.png") no-repeat;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-footer {
+  padding: 0;
+  border-top: none;
+}
+.myModal9 .ant-modal .ant-modal-content .ant-modal-footer .ant-btn {
+  display: none;
+}

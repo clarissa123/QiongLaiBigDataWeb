@@ -1,0 +1,393 @@
+@import "../../assets/style/myUI.less";
+
+html section main.projectManagement {
+  padding-top: 17px;
+  padding-left: 22px;
+  padding-right: 21px;
+  box-sizing:border-box;
+  
+}
+
+.projectManagement {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .total_amount {
+    width: 100%;
+    height: 292px;
+
+    display: flex;
+    flex-direction: row;
+
+    .item {
+      width: 354px;
+      height: 292px;
+      margin-right:18px;
+
+      .item_tit {
+        height: 42px;
+        line-height: 42px;
+        background: url("./images/total_title_bg.png") no-repeat;
+        background-size: 100% 100%;
+        text-align: center;
+
+        span {
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+
+      .item_con {
+        height: 250px;
+        padding-top: 85px;
+        background: url("./images/total_content_bg.png") no-repeat;
+        background-size: 100% 100%;
+        text-align: center;
+
+        span:not(.extra):not(.extra_con) {
+          font-family: Microsoft YaHei;
+          font-weight: bold;
+          font-size: 40px;
+          letter-spacing: 2px;
+        }
+
+        .total_investment_content_con {
+          display: block;
+        }
+
+        .total_investment_extra {
+          padding-left: 25%;
+          text-align: left;
+
+          .extra {
+            display: inline-flex;
+            left: 78px;
+            font-size: 14px;
+            font-family: Microsoft YaHei;
+            line-height: 24px;
+            color: rgba(205, 211, 227, 1);
+          }
+
+          .extra1 {
+            width: auto;
+          }
+
+          .extra2 {
+            width: 160px;
+          }
+
+          .extra_con {
+            display: inline-flex;
+            width: 100px;
+            font-size: 14px;
+            font-family: Microsoft YaHei;
+            line-height: 24px;
+            color: rgba(205, 211, 227, 1);
+          }
+        }
+
+      }
+
+      .cumulative_completion_this_year_content,
+      .number_items_content {
+        padding-top: 20px;
+      }
+    }
+
+    .cumulative_investment_this_year {
+      width:362px;
+      .cumulative_investment_this_year_content {
+        .edit_container {
+          position: relative;
+          height: 100%;
+
+          .edit_investment_input {
+            background: none;
+            border: none;
+            font-size: 0.93vw;
+            position: absolute;
+            right: 19px;
+            top: 5.5vw;
+            width: 15vw;
+            outline: none;
+            box-shadow: none;
+            color: rgba(255, 255, 255, 0.9);
+          }
+
+          .myEdit {
+            position: absolute;
+            top: 8vw;
+            right: 8vw;
+
+            span {
+              font-size: 16px;
+              font-weight: 400;
+              color: #fff;
+              opacity: 0.5;
+              letter-spacing: 1px;
+            }
+          }
+
+          .mySave {
+            position: absolute;
+            top: 8vw;
+            right: 8vw;
+
+            span {
+              font-size: 16px;
+              font-weight: 400;
+              color: #2BB1FF;
+              opacity: 1;
+              letter-spacing: 1px;
+            }
+          }
+        }
+
+      }
+    }
+
+    .accumulated_investment_this_month {}
+
+    .total_investment,.cumulative_completion_this_year {
+      width:362px;
+    }
+
+    .number_items{
+      margin-right:0;
+    }
+
+  }
+
+  .show_table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 624px;
+
+    .item_tit {
+      height: 42px;
+      text-align: center;
+      line-height: 42px;
+      font-weight: bold;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    .projectList {
+      width: 1107px;
+      margin: 0;
+      margin-right: 18px;
+
+      .projectList_title {
+        height: 42px;
+        line-height: 42px;
+        background: url("./images/projectList_title_bg.png") no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .projectList_content {
+        height: 582px;
+        margin: 0;
+        background: url("./images/projectList_content_bg.png") no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+
+        .top_content {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          .right_item {
+            margin-right: 42px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .add_btn {
+              .ant-btn {
+                width: 70.64px;
+                height: 30px;
+                background: url("./images/add_btn_border.png") no-repeat;
+                background-size: 100% 100%;
+                box-sizing: border-box;
+                border-color: transparent;
+              }
+            }
+
+            .more_btn {
+              margin-left: 29px;
+            }
+          }
+        }
+
+        .table_data {
+          width: 1077px;
+          height: 480px;
+          border: 1px solid #193B9D;
+          margin-top: 13px;
+          margin-left: 20px;
+
+          .myTable .ant-table-thead>tr>th {
+            background: #0D348E;
+          }
+
+          .myTable .ant-table-thead>tr>th {
+            border-bottom: none;
+          }
+
+          .myTable .ant-table-thead>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+          .ant-table-tbody>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+          .ant-table-thead>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+          .ant-table-tbody>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td {
+            background: transparent;
+          }
+
+          .myTable .light-row {
+            background-color: #0D348E;
+          }
+
+          .myTable .ant-table-tbody>tr>td {
+            border-bottom: none;
+          }
+
+          .myTable .ant-progress-text {
+            color: rgba(255, 255, 255, .9);
+          }
+
+          .myTable .ant-table-row>a {
+            font-size: 0.67vw;
+            color: rgba(255, 255, 255, .9);
+          }
+
+          .myTable .ant-table-placeholder {
+            background: transparent;
+            border-top: none;
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    .projectMap {
+      width:calc(100% - 1125px);
+
+      .projectMap_title {
+        height: 42px;
+        background: url("./images/projectMap_title_bg.png") no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .projectMap_content {
+        height: 582px;
+        background: url("./images/projectMap_content_bg.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  margin-right: 0;
+  background-color: transparent;
+}
+
+.ant-table-thead>tr>th,
+.ant-table-tbody>tr>td {
+  text-align: center;
+}
+
+.ant-pagination-simple .ant-pagination-simple-pager input {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  margin-right: 0;
+}
+
+.ant-progress-inner {
+  background-color: #074893;
+}
+
+.projectManagement .show_table .projectList .projectList_content .table_data .myTable .ant-table-tbody>tr>td>a {
+  color: rgba(255, 255, 255, .9);
+}
+
+/************** 年份选择框 start *************/
+.year_select2 .ant-calendar-picker-input.ant-input {
+  color: rgba(255, 255, 255, .9);
+  border: none;
+  background: url("./images/year_select_bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.ant-calendar,
+.ant-calendar-input,
+.ant-calendar-year-panel {
+  background-color: #0D348E;
+  border-color: #2BB1FF;
+}
+
+.ant-calendar-input-wrap,
+.ant-calendar-year-panel-header {
+  border-color: #2BB1FF;
+}
+
+.ant-calendar-year-panel-year,
+.ant-calendar-input {
+  color: rgba(255, 255, 255, .9);
+}
+
+.ant-calendar-year-panel-year:hover {
+  background: transparent;
+}
+
+.ant-calendar-header a:hover {
+  color: rgba(255, 255, 255, .9);
+}
+
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn::after {
+  color: #fff;
+  border-color: #fff;
+}
+
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn::after {
+  color: #fff;
+  border-color: #fff;
+}
+
+.ant-calendar-picker-clear {
+  background: transparent;
+}
+
+/************** 年份选择框 end *************/
+
+/************** 通知提醒框 end *************/
+.ant-message .ant-message-notice-content {
+  width: 18.26vw;
+  height: 4.73vw;
+  line-height: 3.73vw;
+  background: url("./images/message_bg.png") no-repeat;
+  background-size: 100% 100%;
+
+  span {
+    font-size: 16px;
+    color: rgb(44, 177, 255);
+  }
+}
+
+/************** 通知提醒框 end *************/

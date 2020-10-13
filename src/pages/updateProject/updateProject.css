@@ -1,0 +1,273 @@
+.updateProject {
+  height: 100%;
+}
+.updateProject .insertProject_content .item_info {
+  background: url("images/item_info_bg.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+}
+.updateProject .insertProject_content .item_info span {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.updateProject .insertProject_content .item_info_content {
+  background: url("images/item_info_content.png") no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+}
+.updateProject .insertProject_content .item_info_content .btn {
+  text-align: right;
+}
+.updateProject .insertProject_content .item_info_content .btn .myInsert {
+  width: 100px;
+  height: 30px;
+  background: #2cb1ff;
+  border: none;
+  margin-top: 35px;
+  margin-right: 20px;
+}
+.updateProject .insertProject_content .item_info_content .item_info_content_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.myForm {
+  margin-bottom: 0;
+}
+.myForm .ant-col .ant-col-12 .ant-col-offset-5 .ant-form-item-control-wrapper {
+  margin-left: 0;
+}
+.myForm .ant-col-12 {
+  text-align: right;
+}
+.myForm .myInsert {
+  width: 100px;
+  height: 30px;
+  background: #2cb1ff;
+  border: none;
+  margin-top: 34px;
+  margin-right: 57px;
+}
+.myForm .ant-form-item {
+  margin-bottom: 0;
+}
+.myForm .ant-form-item:nth-child(2) {
+  margin-top: 20px;
+}
+.myForm .ant-form-item-label > label {
+  color: rgba(43, 177, 255, 0.9);
+  text-align: center;
+}
+.myForm .ant-form-item-label {
+  width: 161.66px;
+  height: 74.4px;
+  background: url("images/title_bg.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  margin-bottom: 55px;
+  margin-left: 57px;
+  margin-right: 30px;
+}
+.myForm .ant-form-item-label .ant-form-item-label > label::after {
+  display: none;
+}
+.myForm .ant-form-item-label .has-error .ant-form-explain,
+.myForm .ant-form-item-label .has-error .ant-form-split {
+  color: #2bb1ff;
+}
+.myForm .ant-form-item-label .ant-input {
+  width: 34.26vw;
+  height: 3.86vw;
+  border: 1px solid rgba(43, 177, 255, 0.17);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.9);
+}
+.myForm .ant-form-item-label .ant-select-selection--single {
+  width: 659px;
+  height: 75px;
+  background: transparent;
+  border: 1px solid rgba(43, 177, 255, 0.17);
+}
+.myForm .ant-form-item-label .ant-form-item-control {
+  line-height: 0;
+}
+.myForm .ant-form-item-label .ant-select-selection__placeholder {
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  height: 75px;
+  margin-top: 0;
+  line-height: 75px;
+}
+.ant-select-dropdown {
+  background-color: #082875;
+  border: 1px solid #2bb1ff;
+}
+.ant-select-dropdown .ant-select-dropdown--single .ant-select-dropdown-placement-bottomLeft .ant-select-dropdown-hidden {
+  width: 659px;
+  height: 75px;
+  background-color: transparent;
+  border: 1px solid rgba(43, 177, 255, 0.17);
+}
+.ant-select-dropdown-menu {
+  /* IE 浏览器 */
+  /*三角箭头的颜色*/
+  scrollbar-arrow-color: #07256D;
+  /*滚动条滑块按钮的颜色*/
+  scrollbar-face-color: rgba(0, 141, 223, 0.2);
+  /*滚动条整体颜色*/
+  scrollbar-highlight-color: #07256D;
+  /*滚动条阴影*/
+  scrollbar-shadow-color: #07256D;
+  /*滚动条轨道颜色*/
+  scrollbar-track-color: #07256D;
+}
+.ant-select-dropdown-menu::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 12px;
+  height: 0;
+}
+.ant-select-dropdown-menu::-webkit-scrollbar-button {
+  display: none;
+}
+.ant-select-dropdown-menu::-webkit-scrollbar-thumb {
+  /*滚动条里面的滑块*/
+  border-radius: 2px;
+  background: rgba(43, 176, 255, 0.2);
+  border: 1px solid #000;
+}
+.ant-select-dropdown-menu::-webkit-scrollbar-track {
+  /*滚动条里面轨道背景*/
+  border-radius: 0;
+  background: #041549;
+}
+.ant-select-dropdown-menu-item {
+  color: #ffffff;
+  background-color: transparent;
+}
+.ant-select-dropdown-menu-item {
+  padding: 20px;
+  font-size: 16px;
+}
+.ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+  background-color: #2bb1ff;
+}
+.ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+  background-color: transparent;
+}
+.ant-select-selection-selected-value {
+  font-size: 14px;
+}
+.has-error .ant-input:focus,
+.has-error .ant-input:not([disabled]):hover {
+  border: 1px solid rgba(43, 177, 255, 0.17);
+  background: transparent;
+}
+.upload_item {
+  width: 100%;
+}
+.ant-upload-list {
+  display: flex;
+  position: absolute;
+  top: -30px;
+  left: 13vw;
+  width: 659px;
+  flex-wrap: wrap;
+}
+.ant-upload-list .ant-upload-list-picture {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.upload_btn {
+  width: 163px;
+  height: 75px;
+  background-color: transparent;
+  border: 1px solid #2bb1ff;
+  margin-left: 2.93vw;
+  display: inline-block;
+}
+.upload_btn .ant-btn > .anticon {
+  color: #2BB1FF;
+}
+.upload_btn .ant-upload {
+  margin-bottom: 58px;
+}
+.upload_btn span {
+  color: #2bb1ff;
+}
+.ant-btn-primary-disabled,
+.ant-btn-primary.disabled,
+.ant-btn-primary[disabled],
+.ant-btn-primary-disabled:hover,
+.ant-btn-primary.disabled:hover,
+.ant-btn-primary[disabled]:hover,
+.ant-btn-primary-disabled:focus,
+.ant-btn-primary.disabled:focus,
+.ant-btn-primary[disabled]:focus,
+.ant-btn-primary-disabled:active,
+.ant-btn-primary.disabled:active,
+.ant-btn-primary[disabled]:active,
+.ant-btn-primary-disabled.active,
+.ant-btn-primary.disabled.active,
+.ant-btn-primary[disabled].active {
+  background: #2bb1ff;
+}
+.upload-list-inline .ant-upload-list-item {
+  float: left;
+  width: 200px;
+  margin-right: 8px;
+}
+.upload-list-inline .ant-upload-animate-enter {
+  animation-name: uploadAnimateInlineIn;
+}
+.upload-list-inline .ant-upload-animate-leave {
+  animation-name: uploadAnimateInlineOut;
+}
+.ant-calendar,
+.ant-calendar-input,
+.ant-calendar-year-panel {
+  background-color: #082875;
+  border-color: #2BB1FF;
+}
+.ant-calendar-range {
+  width: 34.26vw;
+}
+.ant-calendar-range .ant-calendar-input,
+.ant-calendar-range .ant-calendar-time-picker-input {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.9);
+}
+.ant-calendar-header .ant-calendar-century-select,
+.ant-calendar-header .ant-calendar-decade-select,
+.ant-calendar-header .ant-calendar-year-select,
+.ant-calendar-header .ant-calendar-month-select {
+  color: rgba(255, 255, 255, 0.9);
+}
+.ant-calendar-date {
+  color: rgba(255, 255, 255, 0.9);
+}
+.ant-calendar-range .ant-calendar-in-range-cell::before {
+  background-color: #0C2F83;
+}
+.ant-calendar-range .ant-calendar-body,
+.ant-calendar-range .ant-calendar-month-panel-body,
+.ant-calendar-range .ant-calendar-year-panel-body,
+.ant-calendar-range .ant-calendar-decade-panel-body {
+  border-color: #2BB1FF;
+}
+.ant-calendar-date:hover {
+  background: transparent;
+}
+.ant-calendar-range-picker-separator {
+  min-width: 9%;
+  color: rgba(255, 255, 255, 0.9);
+}
+.ant-calendar-today .ant-calendar-date {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: normal;
+  border-color: transparent;
+}
